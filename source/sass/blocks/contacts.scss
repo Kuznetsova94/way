@@ -1,0 +1,62 @@
+.contacts {
+  width: 390px;
+}
+
+.contacts__title {
+  //PixelPerfect
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $darkblack;
+}
+
+.contacts__list {
+  @include reset-list;
+}
+
+.contacts__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: $carrot;
+}
+
+.contacts__item--email {
+  position: relative;
+  //PixelPerfect
+  margin-bottom: 20px;
+  padding-left: 41px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-footer-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 26px;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.contacts__item--telephone {
+  position: relative;
+  //PixelPerfect
+  padding-left: 41px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-footer-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+  }
+}

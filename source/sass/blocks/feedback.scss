@@ -1,0 +1,281 @@
+.feedback {
+  width: 382px;
+  min-height: 367px;
+  padding-left: 420px;
+}
+
+.feedback__title {
+  position: relative;
+  width: 289px;
+  min-height: 38px;
+  //PixelPerfect
+  padding-top: 30px;
+  margin-left: 30px;
+  padding-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.7px;
+  color: $darkgrey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-feedback-line.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 68px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.feedback__text {
+  width: 322px;
+
+  //PixelPerfect
+  margin-left: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.41px;
+  color: $darkgreyopacity;
+}
+
+.feedback__author {
+  position: relative;
+
+  width: 288px;
+  min-height: 38px;
+  //PixelPerfect
+  margin-left: 30px;
+  padding-left: 54px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.47px;
+  color: $darkgrey;
+}
+
+// Картинки по странам к авторам
+.feedback__author--greece {
+  //PixelPerfect
+  margin-top: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-feedback-greece.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 38px;
+    height: 38px;
+    top: -10px;
+    left: 0;
+  }
+}
+
+.feedback__author--albania {
+  //PixelPerfect
+  margin-top: 33px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-feedback-albania.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 38px;
+    height: 38px;
+    top: -10px;
+    left: 0;
+  }
+}
+
+.feedback__author--macedonia {
+  //PixelPerfect
+  margin-top: 33px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-feedback-macedonia.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 38px;
+    height: 38px;
+    top: -10px;
+    left: 0;
+  }
+}
+
+.feedback__author--montenegro {
+  //PixelPerfect
+  margin-top: 45px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-feedback-montenegro.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 38px;
+    height: 38px;
+    top: -10px;
+    left: 0;
+  }
+}
+
+.feedback__author--croatia {
+  //PixelPerfect
+  margin-top: 34px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-feedback-croatia.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 38px;
+    height: 38px;
+    top: -10px;
+    left: 0;
+  }
+}
+
+// Картинки по странам к отзывам
+.feedback__wrapper--greece {
+  position: relative;
+
+  width: 382px;
+  min-height: 367px;
+  //PixelPerfect
+  margin-top: 114px;
+
+  background-color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-image: url("../img/desktop-biggreece.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 430px;
+    height: 596px;
+    //PixelPerfect
+    top: -114px;
+    left: -318px;
+  }
+}
+
+.feedback__wrapper--albania {
+  position: relative;
+
+  width: 382px;
+  min-height: 314px;
+  //PixelPerfect
+  margin-top: 114px;
+
+  background-color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-image: url("../img/desktop-bigalbania.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 430px;
+    height: 596px;
+    //PixelPerfect
+    top: -114px;
+    left: -318px;
+  }
+}
+
+.feedback__wrapper--macedonia {
+  position: relative;
+
+  width: 382px;
+  min-height: 367px;
+  //PixelPerfect
+  margin-top: 114px;
+
+  background-color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-image: url("../img/desktop-bigmacedonia.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 430px;
+    height: 596px;
+    //PixelPerfect
+    top: -114px;
+    left: -318px;
+  }
+}
+
+
+.feedback__wrapper--montenegro {
+  position: relative;
+
+  width: 382px;
+  min-height: 285px;
+  //PixelPerfect
+  margin-top: 114px;
+
+  background-color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-image: url("../img/desktop-bigmontenegro.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 430px;
+    height: 596px;
+    //PixelPerfect
+    top: -114px;
+    left: -318px;
+  }
+}
+
+
+.feedback__wrapper--croatia {
+  position: relative;
+
+  width: 382px;
+  min-height: 367px;
+  //PixelPerfect
+  margin-top: 114px;
+
+  background-color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-image: url("../img/desktop-bigcroatia.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 430px;
+    height: 596px;
+    //PixelPerfect
+    top: -114px;
+    left: -318px;
+  }
+}

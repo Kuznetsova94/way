@@ -1,1 +1,97 @@
-//
+.prices {
+  width: 100vw;
+}
+
+.prices__wrapper {
+  display: flex;
+  width: 1450px;
+  margin: 0 auto;
+  margin-bottom: 138px;
+}
+
+.prices__header {
+  display: flex;
+  flex-direction: column;
+
+  order: 2;
+  margin-left: 110px;
+}
+
+.prices__title {
+  position: relative;
+  width: 295px;
+  min-height: 79px;
+
+  //PixelPerfect
+  padding-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  color: $darkgrey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-trip-line.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 175px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.prices__text {
+  width: 295px;
+  min-height: 79px;
+
+  margin-bottom: 60px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: $darkgreyopacity;
+}
+
+.prices__contact {
+  width: 249px;
+  margin-bottom: 13px;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: $darkblack;
+}
+
+.prices__number {
+  position: relative;
+  width: 249px;
+
+  padding-left: 40px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/prices-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.prices__list {
+  @include reset-list;
+
+  display: flex;
+  column-gap: 30px;
+}

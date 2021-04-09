@@ -1,0 +1,51 @@
+/*.description {
+margin-right: 100px;
+}*/
+
+.description__country-name {
+  position: relative;
+  width: 425px;
+  min-height: 79px;
+
+  padding-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+
+  letter-spacing: -1.245px;
+  color: $darkgrey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-trip-line.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 175px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.description__text {
+  width: 370px;
+
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  color: $darkgreyopacity;
+}
+
+.description__button {
+  width: 250px;
+  min-height: 75px;
+
+  padding-top: 30px;
+  padding-left: 40px;
+}

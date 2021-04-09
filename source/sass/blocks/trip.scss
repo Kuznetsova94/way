@@ -1,1 +1,199 @@
-//
+.trip {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.trip__wrapper {
+  width: 1450px;
+  margin: 0 auto;
+  //PixelPerfect
+  margin-top: 200px;
+}
+
+.trip__title {
+  position: relative;
+  width: 358px;
+  min-height: 160px;
+
+  padding-bottom: 30px;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.245px;
+  color: $darkgrey;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    background-image: url("../img/desktop-trip-line.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 229px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.trip__slogan {
+  width: 328px;
+  min-height: 56px;
+
+  margin-bottom: 56px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  color: $darkgreyopacity;
+}
+
+.trip__catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include reset-list;
+}
+
+.trip__unit {
+  position: relative;
+
+  width: 215px;
+  min-height: 61px;
+  background-color: $white;
+
+  //Попытка выровнять бокс для картинки
+  //PixelPerfect
+  margin-top: 367px;
+  margin-left: 68px;
+  //margin-right: 67px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.415px;
+  color: $darkgrey;
+  //Попытка выровнять текст
+  //PixelPerfect
+  padding-top: 17px;
+  box-sizing: border-box;
+}
+
+
+// Картинки, соотв. странам
+.trip__unit--greece {
+  margin-right: 120px;
+  margin-bottom: 101px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-image: url("../img/desktop-greece.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 350px;
+    height: 430px;
+    bottom: 0;
+    left: -68px;
+  }
+}
+
+.trip__unit--albania {
+  margin-right: 120px;
+  margin-bottom: 101px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-albania.jpg");
+    z-index: -1;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 350px;
+    height: 430px;
+    bottom: 0;
+    left: -68px;
+  }
+}
+
+.trip__unit--macedonia {
+  margin-right: 120px;
+  margin-bottom: 101px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-image: url("../img/desktop-macedonia.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 350px;
+    height: 430px;
+    bottom: 0;
+    left: -68px;
+  }
+}
+
+.trip__unit--montenegro {
+  //PixelPerfect
+  margin-left: 225px;
+  margin-right: 180px;
+  margin-bottom: 97px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-image: url("../img/desktop-montenegro.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 350px;
+    height: 430px;
+    bottom: 0;
+    left: -68px;
+  }
+}
+
+.trip__unit--croatia {
+  //position: relative;
+
+  //margin-right: 60px;
+  margin-bottom: 97px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    background-image: url("../img/desktop-croatia.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 350px;
+    height: 430px;
+    bottom: 0;
+    left: -68px;
+  }
+}
+
+// ===============================  Вторая часть раздела; СЛАЙДЕР ============================ //
+.trip__list {
+
+  @include reset-list;
+}
+
+.trip__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-bottom: 240px;
+}

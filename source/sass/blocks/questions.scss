@@ -1,1 +1,70 @@
-//
+.questions {
+  width: 100vw;
+}
+
+.questions__wrapper {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+
+  width: 1170px;
+  margin-bottom: 170px;
+  // PixelPerfect
+  padding-top: 55px;
+}
+
+.questions__wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url("../img/desktop-sunset.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 844px;
+  height: 455px;
+  top: 0;
+  left: 0;
+}
+
+.questions__field {
+  width: 656px;
+  min-height: 315px;
+  margin-left: 513px;
+
+  background-color: $white;
+  box-shadow: 0px 4px 30px $shadowgrey;
+  border-radius: 5px;
+}
+
+.questions__title {
+  padding-top: 50px;
+  margin-left: 153px;
+  margin-bottom: 11px;
+
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  color: $darkblack;
+}
+
+.questions__text {
+  width: 557px;
+  margin-left: 50px;
+  margin-bottom: 24px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.questions__button {
+  width: 176px;
+  min-height: 50px;
+
+  margin-top: 25px;
+  margin-left: 240px;
+
+  padding-top: 18px;
+  padding-left: 40px;
+}

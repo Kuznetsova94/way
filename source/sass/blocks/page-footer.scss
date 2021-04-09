@@ -1,1 +1,50 @@
-//
+.page-footer {
+  width: 100vw;
+}
+
+.page-footer__wrapper {
+  display: flex;
+
+  width: 1170px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+}
+
+.page-footer__countries {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-footer-line.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 1px;
+    height: 189px;
+    top: 15px;
+    right: 0;
+  }
+}
+
+.page-footer__contacts {
+  position: relative;
+  padding-left: 90px;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-footer-line.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 1px;
+    height: 189px;
+    top: 15px;
+    right: 0;
+  }
+}
+
+.page-footer__offer {
+  padding-left: 49px;
+  box-sizing: border-box;
+}

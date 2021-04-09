@@ -1,1 +1,45 @@
-//
+/*.main-nav {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+*/
+/*.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 690px;
+    margin: 0 auto;
+    margin-left: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 90px;
+    width: 1040px;
+  }
+}*/
+
+.main-nav__list {
+  @include reset-list;
+
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+
+  //PixelPerfect
+  margin-top: 42px;
+
+/*  @media (min-width: $tablet-width) {
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__list--close {
+    display: none;
+  }*/
+}

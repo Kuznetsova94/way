@@ -1,0 +1,114 @@
+.promotion__item {
+  width: 370px;
+  min-height: 672px;
+
+  border: 1px solid $greyopacity;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.promotion__name {
+  margin-bottom: 36px;
+  margin-left: 30px;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -1.27px;
+  color: $greylight;
+}
+
+.promotion__text {
+  position: relative;
+  width: 289px;
+  min-height: 48px;
+  margin-left: 30px;
+  padding-bottom: 28px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $darkgrey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-price-line.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 310px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.promotion__bundle {
+  @include reset-list;
+}
+
+.promotion__option {
+  position: relative;
+  width: 280px;
+
+  padding-left: 30px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $darkgrey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-price-point.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 14px;
+    height: 12px;
+    top: 10px;
+    left: 0;
+  }
+}
+
+.promotion__amount--complex {
+  padding-left: 20px;
+}
+
+.promotion__amount--economy {
+padding-left: 50px;
+}
+
+.promotion__button {
+  width: 310px;
+  min-height: 75px;
+
+  margin: 30px;
+  padding-top: 30px;
+  padding-left: 70px;
+}
+
+//Интерактивность карточки
+.promotion__item:hover {
+  border: 3px solid $carrot;
+
+  .promotion__name {
+    color: $carrot;
+  }
+
+  .promotion__text {
+
+    &::after {
+      background-image: url("../img/desktop-hover-price-line.svg");
+    }
+  }
+
+  .promotion__option {
+
+    &::before {
+      background-image: url("../img/hover.svg");
+    }
+  }
+}

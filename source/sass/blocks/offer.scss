@@ -1,1 +1,19 @@
-//
+.offer {
+  width: 390px;
+}
+
+.offer__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $darkblack;
+}
+
+.offer__text {
+  width: 320px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $shadowlightgrey;
+}
