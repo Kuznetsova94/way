@@ -1,18 +1,23 @@
 .form__fieldset {
   border: none;
-  //Pixel Perfect
-  margin-left: 50px;
 }
 
 .form__list {
   display: flex;
+  //Pixel Perfect
+  margin-left: 50px;
 
   @include reset-list;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+  }
 }
 
 .form__field {
   width: 269px;
   min-height: 50px;
+  border: 1px solid $greyopacity;
 
   &::placeholder {
     padding-top: 16px;
@@ -24,8 +29,17 @@
     line-height: 17px;
     color: $darkblack;
   }
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+  }
 }
 
 .form__field--telephone {
   margin-right: 19px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }

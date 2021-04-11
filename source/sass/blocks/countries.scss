@@ -1,5 +1,14 @@
 .countries {
   width: 390px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 416px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 296px;
+    margin: 0 auto;
+  }
 }
 
 .countries__title {
@@ -10,12 +19,21 @@
 }
 
 .countries__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  row-gap: 10px;
+  //display: grid;
+  //grid-template-columns: 1fr 1fr 1fr;
+  //grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  //row-gap: 10px;
 
-  @include reset-list;
+  //@include reset-list;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: 20px;
+   //column-gap: 20px;
+  }
+}
+
+.countries__row {
+  padding-bottom: 10px;
 }
 
 .countries__item {

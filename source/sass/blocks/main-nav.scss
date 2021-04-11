@@ -29,17 +29,88 @@
 
   //PixelPerfect
   margin-top: 42px;
+}
 
-/*  @media (min-width: $tablet-width) {
-    background-color: $white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media (max-width: $tablet-width-only) {
+  .main-nav__list--close {
+    display: none;
+  }
+}
+
+// Меню-бургер
+.main-nav__toggle {
+  display: none;
+}
+
+@media (max-width: $tablet-width-only) {
+  .main-nav__toggle {
+    position: relative;
+    display: block;
+    width: 72px;
+    height: 50px;
+
+    background-color: $carrot;
+    border: none;
+
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/burger-menu.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      top: 10px;
+      left: 21px;
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav__list--close {
-    display: none;
-  }*/
+  .main-nav__toggle {
+    width: 50px;
+
+    &::before {
+      left: 10px;
+    }
+  }
+}
+
+
+.main-nav__toggle--closed {
+  display: none;
+}
+
+
+// Меню-закрытие
+.main-nav__close {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__close--active {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 52px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/close-menu.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      top: 15px;
+      left: 14px;
+      width: 22px;
+      height: 22px;
+    }
+  }
 }

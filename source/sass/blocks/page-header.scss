@@ -13,15 +13,14 @@
   background-color: $white;
   color: $darkblack;
 
-  /*@media (min-width: $tablet-width) {
-    width: 768px;
+  @media (max-width: $tablet-width-only) {
+    max-width: 768px;
+    min-height: 50px;
   }
 
-  @media (min-width: $desktop-width) {
-    max-width: 1024px;
-    min-height: 100px;
-    outline: 1px solid red;
-  }*/
+  @media (max-width: $mobile-width-only) {
+    max-width: 320px;
+  }
 }
 
 .page-header__logo {
@@ -35,32 +34,28 @@
   //PixelPerfect
   margin-top: 39px;
   margin-right: 610px;
-}
 
-/*@media (min-width: $tablet-width) {
-  .page-header__logo {
-    position: absolute;
-    width: 102px;
-    height: 84px;
+  @media (max-width: $tablet-width-only) {
+    width: 44px;
+    height: 17px;
     //PixelPerfect
-    top: 0;
-    left: 333px;
+    margin-top: 19px;
+    margin-right: 631px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-right: 210px;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .page-header__logo {
-    width: 187px;
-    height: 97px;
-    top: 0;
-    left: 505px;
-  }
-}*/
 
 .page-header__telephone {
   width: 223px;
   //PixelPerfect
   margin-top: 36px;
+
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
 }
 
 .page-header__number {

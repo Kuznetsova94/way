@@ -1,6 +1,6 @@
 .trip {
   width: 100vw;
-  margin: 0 auto;
+  //margin: 0 auto;
 }
 
 .trip__wrapper {
@@ -8,6 +8,19 @@
   margin: 0 auto;
   //PixelPerfect
   margin-top: 200px;
+
+  @media (max-width: $tablet-width-only) {
+    max-width: 768px;
+    //PixelPerfect
+    margin-top: 80px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 320px;
+    //PixelPerfect
+    margin-top: 108px;
+    outline: 1px solid blue;
+  }
 }
 
 .trip__title {
@@ -37,6 +50,34 @@
   }
 }
 
+@media (max-width: $tablet-width-only) {
+  .trip__title {
+    width: 301px;
+    min-height: 45px;
+    margin: 0 auto;
+
+    font-size: 30px;
+    line-height: 45px;
+
+    &::after {
+      background-image: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .trip__title {
+    width: 288px;
+    min-height: 36px;
+
+    font-size: 24px;
+    line-height: 36px;
+
+    //PixelPerfect
+    padding-left: 50px;
+  }
+}
+
 .trip__slogan {
   width: 328px;
   min-height: 56px;
@@ -48,6 +89,18 @@
   line-height: 28px;
   letter-spacing: -0.47px;
   color: $darkgreyopacity;
+
+  @media (max-width: $tablet-width-only) {
+    width: 343px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+    margin-bottom: 20px;
+  }
 }
 
 .trip__catalog {
@@ -81,8 +134,12 @@
   //PixelPerfect
   padding-top: 17px;
   box-sizing: border-box;
-}
 
+  @media (max-width: $tablet-width-only) {
+    margin-top: 364px;
+    margin-left: 36px;
+  }
+}
 
 // Картинки, соотв. странам
 .trip__unit--greece {
@@ -101,6 +158,34 @@
     height: 430px;
     bottom: 0;
     left: -68px;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .trip__unit--greece {
+    margin-right: 29px;
+    margin-bottom: 19px;
+
+    &::before {
+      background-image: url("../img/greecepic.jpg");
+      width: 288px;
+      height: 425px;
+      bottom: 0;
+      left: -35px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .trip__unit--greece {
+    //PixelPerfect
+    margin-right: 0;
+    //margin-bottom: 19px;
+
+    &::before {
+      bottom: 0;
+      left: -35px;
+    }
   }
 }
 
@@ -123,6 +208,34 @@
   }
 }
 
+@media (max-width: $tablet-width-only) {
+  .trip__unit--albania {
+    margin-bottom: 20px;
+
+    &::before {
+      background-image: url("../img/albaniapic.jpg");
+      width: 288px;
+      height: 425px;
+      //PixelPerfect
+      bottom: 0;
+      left: -35px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .trip__unit--albania {
+    //PixelPerfect
+    margin-right: 0;
+    //margin-bottom: 19px;
+
+    &::before {
+      bottom: 0;
+      left: -35px;
+    }
+  }
+}
+
 .trip__unit--macedonia {
   margin-right: 120px;
   margin-bottom: 101px;
@@ -139,6 +252,35 @@
     height: 430px;
     bottom: 0;
     left: -68px;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .trip__unit--macedonia {
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &::before {
+      background-image: url("../img/macedoniapic.jpg");
+      width: 288px;
+      height: 425px;
+      //PixelPerfect
+      bottom: 0;
+      left: -35px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .trip__unit--macedonia {
+    //PixelPerfect
+    margin-right: 0;
+    //margin-bottom: 19px;
+
+    &::before {
+      bottom: 0;
+      left: -35px;
+    }
   }
 }
 
@@ -163,17 +305,43 @@
   }
 }
 
-.trip__unit--croatia {
-  //position: relative;
+@media (max-width: $tablet-width-only) {
+  .trip__unit--montenegro {
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-left: 0;
 
-  //margin-right: 60px;
+    &::before {
+      background-image: url("../img/montenegropic.jpg");
+      width: 288px;
+      height: 425px;
+      //PixelPerfect
+      bottom: 0;
+      left: -35px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .trip__unit--montenegro {
+    //PixelPerfect
+    margin-right: 0;
+    //margin-bottom: 19px;
+
+    &::before {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+.trip__unit--croatia {
   margin-bottom: 97px;
 
   &::before {
     content: "";
     position: absolute;
     z-index: -1;
-
     background-image: url("../img/desktop-croatia.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -184,9 +352,38 @@
   }
 }
 
+@media (max-width: $tablet-width-only) {
+  .trip__unit--croatia {
+    margin-left: 240px;
+    margin-bottom: 100px;
+
+    &::before {
+      background-image: url("../img/croatiapic.jpg");
+      width: 288px;
+      height: 425px;
+      //PixelPerfect
+      bottom: 0;
+      left: -35px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .trip__unit--croatia {
+    //PixelPerfect
+    margin-right: 0;
+    margin-left: 0;
+    //margin-bottom: 19px;
+
+    &::before {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
 // ===============================  Вторая часть раздела; СЛАЙДЕР ============================ //
 .trip__list {
-
   @include reset-list;
 }
 
@@ -196,4 +393,10 @@
   flex-wrap: wrap;
 
   margin-bottom: 240px;
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    margin-left: 15px;
+    margin-bottom: 110px;
+  }
 }

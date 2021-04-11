@@ -11,19 +11,49 @@
   margin-bottom: 170px;
   // PixelPerfect
   padding-top: 55px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: url("../img/desktop-sunset.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 844px;
+    height: 455px;
+    top: 0;
+    left: 0;
+  }
 }
 
-.questions__wrapper::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background-image: url("../img/desktop-sunset.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  width: 844px;
-  height: 455px;
-  top: 0;
-  left: 0;
+@media (max-width: $tablet-width-only) {
+  .questions__wrapper {
+    width: 768px;
+    margin-bottom: 80px;
+    // PixelPerfect
+    padding-top: 70px;
+    margin-left: 55px;
+
+    &::before {
+      background-image: url("../img/tablet-sunset.jpg");
+      background-repeat: no-repeat;
+      width: 768px;
+      height: 455px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .questions__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    // PixelPerfect
+    margin-bottom: 70px;
+
+    &::before {
+      background-image: none;
+    }
+  }
 }
 
 .questions__field {
@@ -34,6 +64,18 @@
   background-color: $white;
   box-shadow: 0px 4px 30px $shadowgrey;
   border-radius: 5px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 658px;
+    min-height: 311px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+    min-height: 441px;
+    background-color: $darkwhite;
+  }
 }
 
 .questions__title {
@@ -45,6 +87,14 @@
   font-size: 25px;
   line-height: 32px;
   color: $darkblack;
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+    text-align: center;
+
+    //PixelPerfect
+    margin-left: 15px;
+  }
 }
 
 .questions__text {
@@ -54,8 +104,16 @@
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
   text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+    text-align: center;
+
+    //PixelPerfect
+    margin-left: 15px;
+  }
 }
 
 .questions__button {
@@ -67,4 +125,24 @@
 
   padding-top: 18px;
   padding-left: 40px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 250px;
+
+    //PixelPerfect
+    margin-top: 20px;
+    margin-left: 204px;
+
+    padding-top: 19px;
+    padding-left: 84px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+
+    //PixelPerfect
+    margin-left: 16px;
+
+    padding-left: 103px;
+  }
 }

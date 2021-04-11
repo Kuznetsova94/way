@@ -20,13 +20,14 @@
     <div class="page-header__wrapper">
       <a class="page-header__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="./img/desktop-logo.svg">
-          <img src="./img/logo.svg" alt="Логотип сайта Way">
+          <source media="(max-width: 1023px)" srcset="./img/logo.svg">
+          <img src="./img/desktop-logo.svg" alt="Логотип сайта Way">
         </picture>
       </a>
       <nav class="main-nav">
-        <!--<button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span></button>-->
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <!--<div class="main-nav__wrapper">-->
         <ul class="main-nav__list main-nav__list--close site-list">
           <li class="site-list__item">
@@ -40,8 +41,9 @@
             </a>
           </li>
         </ul>
-        <!-- <button class="main-nav__close" type="button">
-            <span class="visually-hidden">Закрыть меню</span></button>-->
+        <button class="main-nav__close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
         <!--</div>-->
       </nav>
       <div class="page-header__telephone">
@@ -103,13 +105,15 @@
             </div>
             <div class="trip__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--greece">
-                <h4 class="feedback__title">Отзывы</h4>
-                <p class="feedback__text">Метеоры в Греции можно сравнить разве что с Монсерратт
-                  в
-                  Испании. Такие же высоченные
-                  скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение
-                  такое, как будто стоишь на краю света! </p>
-                <span class="feedback__author feedback__author--greece">Влада Голицина</span>
+                <div class="feedback__unit feedback__unit--greece">
+                  <h4 class="feedback__title">Отзывы</h4>
+                  <p class="feedback__text">Метеоры в Греции можно сравнить разве что с Монсерратт
+                    в
+                    Испании. Такие же высоченные
+                    скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение
+                    такое, как будто стоишь на краю света! </p>
+                  <span class="feedback__author feedback__author--greece">Влада Голицина</span>
+                </div>
               </div>
             </div>
           </li>
@@ -125,11 +129,13 @@
             </div>
             <div class="trip__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--albania">
-                <h4 class="feedback__title">Отзывы</h4>
-                <p class="feedback__text">Замечательный курорт, обязательно стоит посетить. В
-                  следующий раз возьму с собой
-                  сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
-                <span class="feedback__author feedback__author--albania">Маришка</span>
+                <div class="feedback__unit feedback__unit--albania">
+                  <h4 class="feedback__title">Отзывы</h4>
+                  <p class="feedback__text">Замечательный курорт, обязательно стоит посетить. В
+                    следующий раз возьму с собой
+                    сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+                  <span class="feedback__author feedback__author--albania">Маришка</span>
+                </div>
               </div>
             </div>
           </li>
@@ -145,12 +151,14 @@
             </div>
             <div class="trip__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--macedonia">
-                <h4 class="feedback__title">Отзывы</h4>
-                <p class="feedback__text">Я бы сказал необычное старое здание. В архитектуре я
-                  не разбираюсь, но подъем в гору
-                  был очень веселым так как люди оказались легкими и заводными. Красота природы
-                  впечатлила, особенно после долгого пути в гору. </p>
-                <span class="feedback__author feedback__author--macedonia">Михаил Кузьмин</span>
+                <div class="feedback__unit feedback__unit--macedonia">
+                  <h4 class="feedback__title">Отзывы</h4>
+                  <p class="feedback__text">Я бы сказал необычное старое здание. В архитектуре я
+                    не разбираюсь, но подъем в гору
+                    был очень веселым так как люди оказались легкими и заводными. Красота природы
+                    впечатлила, особенно после долгого пути в гору. </p>
+                  <span class="feedback__author feedback__author--macedonia">Михаил Кузьмин</span>
+                </div>
               </div>
             </div>
           </li>
@@ -165,12 +173,14 @@
             </div>
             <div class="trip__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--montenegro">
-                <h4 class="feedback__title">Отзывы</h4>
-                <p class="feedback__text">Неописуемой красоты каньон! Ничего прекраснее в
-                  жизни
-                  не видела, разве что в фильмах
-                  :) Всем советую </p>
-                <span class="feedback__author feedback__author--montenegro">Анастасия Мей</span>
+                <div class="feedback__unit feedback__unit--montenegro">
+                  <h4 class="feedback__title">Отзывы</h4>
+                  <p class="feedback__text">Неописуемой красоты каньон! Ничего прекраснее в
+                    жизни
+                    не видела, разве что в фильмах
+                    :) Всем советую </p>
+                  <span class="feedback__author feedback__author--montenegro">Анастасия Мей</span>
+                </div>
               </div>
             </div>
           </li>
@@ -186,12 +196,14 @@
             </div>
             <div class="trip__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--croatia">
-                <h4 class="feedback__title">Отзывы</h4>
-                <p class="feedback__text">Мы поехали всей семьей, я, моя жена и родители. Пещера
-                  просто незабываема! А то, что
-                  все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось,
-                  но натур ни с чем не спутать по итогу :) </p>
-                <span class="feedback__author feedback__author--croatia">Владимир Мулицин</span>
+                <div class="feedback__unit feedback__unit--croatia">
+                  <h4 class="feedback__title">Отзывы</h4>
+                  <p class="feedback__text">Мы поехали всей семьей, я, моя жена и родители. Пещера
+                    просто незабываема! А то, что
+                    все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось,
+                    но натур ни с чем не спутать по итогу :) </p>
+                  <span class="feedback__author feedback__author--croatia">Владимир Мулицин</span>
+                </div>
               </div>
             </div>
           </li>
@@ -211,7 +223,8 @@
         </header>
         <ul class="prices__list promotion">
           <li class="promotion__item">
-            <h4 class="promotion__name">Комплексный <span class="promotion__amount promotion__amount--complex">$1999</span></h4>
+            <h4 class="promotion__name">Комплексный <span
+                class="promotion__amount promotion__amount--complex">$1999</span></h4>
             <p class="promotion__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
             <ul class="promotion__bundle">
               <li class="promotion__option">Разработанный маршрут с гидом группы</li>
@@ -219,10 +232,11 @@
               <li class="promotion__option">Завтраки, ужины в отелях и ланчи на природе</li>
               <li class="promotion__option">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
-            <a class="promotion__button button" href="#">купить тур сейчас</a>
+            <a class="promotion__button promotion__button--complex button" href="#">купить тур сейчас</a>
           </li>
           <li class="promotion__item">
-            <h4 class="promotion__name">Экономный <span class="promotion__amount promotion__amount--economy">$1399</span></h4>
+            <h4 class="promotion__name">Экономный <span
+                class="promotion__amount promotion__amount--economy">$1399</span></h4>
             <p class="promotion__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
             <ul class="promotion__bundle">
               <li class="promotion__option">Разработанный маршрут с гидом группы</li>
@@ -231,7 +245,7 @@
               <li class="promotion__option">Только завтраки в отелях</li>
               <li class="promotion__option">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
-            <a class="promotion__button button" href="#">купить тур сейчас</a>
+            <a class="promotion__button promotion__economy button" href="#">купить тур сейчас</a>
           </li>
         </ul>
       </div>
@@ -268,7 +282,33 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__countries countries">
         <p class="countries__title">Следующие путешествия</p>
-        <ul class="countries__list">
+        <table class="countries__list">
+          <tr class="countries__row">
+            <td class="countries__item">Марсель</td>
+            <td class="countries__item">Сардиния</td>
+            <td class="countries__item">Корс</td>
+          </tr>
+          <tr class="countries__row">
+            <td class="countries__item">Ним</td>
+            <td class="countries__item">Палермо</td>
+            <td class="countries__item">Ницца</td>
+          </tr>
+          <tr class="countries__row">
+            <td class="countries__item">Монпелье</td>
+            <td class="countries__item">Катания</td>
+            <td class="countries__item">Монако</td>
+          </tr>
+          <tr class="countries__row">
+            <td class="countries__item">Барселона</td>
+            <td class="countries__item">Неаполь</td>
+            <td class="countries__item">Динь-ле-Бен</td>
+          </tr>
+          <tr class="countries__row">
+            <td class="countries__item">Пальма</td>
+            <td class="countries__item">Рим</td>
+            <td class="countries__item">Гренобль</td>
+          </tr>
+          <!--
           <li class="countries__item">Марсель</li>
           <li class="countries__item">Сардиния</li>
           <li class="countries__item">Корс</li>
@@ -284,13 +324,17 @@
           <li class="countries__item">Пальма</li>
           <li class="countries__item">Рим</li>
           <li class="countries__item">Гренобль</li>
-        </ul>
+          -->
+        </table>
       </div>
       <div class="page-footer__contacts contacts">
         <p class="contacts__title">Наши контакты</p>
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--email">
             puteshestviemechta@gmail.ru
+          </li>
+          <li class="contacts__item contacts__item--mail">
+            Почта
           </li>
           <li class="contacts__item contacts__item--telephone">
             +7 (499) -784-684-46
@@ -306,6 +350,35 @@
       </div>
     </div>
   </footer>
+  <!--POPUPS-->
+  <div class="popup">
+    <div class="popup__wrapper">
+      <h4 class="popup__title">Купить тур</h4>
+      <form class="popup__form application" method="get">
+        <fieldset class="application__fieldset">
+          <legend class="visually-hidden">Ваша контактная информация:</legend>
+          <ul class="application__list">
+            <li class="application__item application__item--telephone">
+              <label class="visually-hidden" for="telephone-application-field">
+                Контактный телефон</label>
+              <input class="application__field application__field--telephone" type="text" name="telephone" id="telephone--application-field"
+                placeholder="+7 Введите 10 цифр номера">
+            </li>
+            <li class="application__item application__item--email">
+              <label class="visually-hidden" for="email-application-field">Электронная почта</label>
+              <input class="application__field application__field--email" type="text" name="email" id="email-application-field" placeholder="E-mail">
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <a class="popup__button button" href="#">отправить</a>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal__wrapper">
+      <p class="modal__text">Форма успешно отправлена, спасибо! :)</p>
+    </div>
+  </div>
   <!--</div>-->
   <!--<script src="../js/main-navigation.js"></script>-->
 </body>

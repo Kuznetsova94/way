@@ -8,6 +8,20 @@
   margin: 0 auto;
 
   background-image: url("../img/desktop-mainpic.jpg");
+
+  @media (max-width: $tablet-width-only) {
+    width: 768px;
+    height: 344px;
+    background-image: url("../img/tablet-mainpic.jpg");
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+    height: 460px;
+    background-image: url("../img/mobile-mainpic.jpg");
+    background-size: 320px 235px;
+    background-repeat: no-repeat;
+  }
 }
 
 .introduction__unit {
@@ -16,6 +30,20 @@
   //PixelPerfect
   padding-top: 165px;
   margin-left: 1100px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 398px;
+    //PixelPerfect
+    padding-top: 40px;
+    margin-left: 185px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 294px;
+    //PixelPerfect
+    padding-top: 81px;
+    margin-left: 16px;
+  }
 }
 
 .introduction__title {
@@ -27,6 +55,24 @@
   line-height: 80px;
   color: $white;
   letter-spacing: -1.11px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 398px;
+    min-height: 45px;
+
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 230px;
+    //PixelPerfect
+    margin-left: 20px;
+
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
 }
 
 .introduction__text {
@@ -37,7 +83,23 @@
   font-size: 16px;
   line-height: 27px;
   color: $white;
-  letter-spacing: -0.47 px;
+  letter-spacing: -0.47px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 398px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 288px;
+    //PixelPerfect
+    padding-top: 81px;
+    //margin-left: 16px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    color: $darkgrey;
+  }
 }
 
 .introduction__button {
@@ -58,5 +120,32 @@
     height: 14px;
     top: 30px;
     left: 286px;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .introduction__button {
+    width: 250px;
+    min-height: 50px;
+    margin: 0 auto;
+
+    //PixelPerfect
+    padding-top: 19px;
+    padding-left: 40px;
+
+    &::after {
+      top: 18px;
+      left: 196px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .introduction__button {
+    width: 288px;
+
+    &::after {
+      left: 234px;
+    }
   }
 }

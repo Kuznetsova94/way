@@ -1,0 +1,39 @@
+.application__fieldset {
+  border: none;
+}
+
+.application__list {
+
+  @include reset-list;
+}
+
+.application__field {
+  width: 270px;
+  min-height: 50px;
+  border: 1px solid $greyopacity;
+
+  &::placeholder {
+    padding-top: 16px;
+    padding-left: 15px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $darkblack;
+  }
+}
+
+.application__field--telephone {
+  margin-bottom: 20px;
+}
+
+.popup__button {
+  width: 176px;
+  min-height: 50px;
+
+  //PixelPerfect
+  margin-left: 110px;
+  padding-top: 19px;
+  padding-left: 40px;
+}

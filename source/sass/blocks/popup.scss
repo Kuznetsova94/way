@@ -1,0 +1,46 @@
+.popup {
+  width: 728px;
+  height: 444px;
+  margin: 0 auto;
+
+  background-color: $darkwhite;
+}
+
+.popup__wrapper {
+  width: 390px;
+  position: relative;
+  //PixelPerfect
+  padding-left: 338px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/desktop-popup.jpg");
+    width: 338px;
+    height: 444px;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/close-menu.svg");
+    width: 22px;
+    height: 22px;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.popup__title {
+  //PixelPerfect
+  padding-top: 72px;
+  padding-left: 75px;
+  margin-bottom: 50px;
+
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 43px;
+  color: $lightblack;
+}

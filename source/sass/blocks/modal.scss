@@ -1,0 +1,33 @@
+.modal__wrapper {
+  position: relative;
+  width: 728px;
+  height: 444px;
+  margin: 0 auto;
+
+  background-color: $darkwhite;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/close-menu.svg");
+    width: 22px;
+    height: 22px;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.modal__text {
+  width: 400px;
+  min-height: 86px;
+
+  //PixelPerfect
+  padding-top: 179px;
+  padding-left: 165px;
+
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+  color: $lightblack;
+  text-align: center;
+}
