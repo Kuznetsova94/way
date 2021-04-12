@@ -88,8 +88,13 @@
     width: 398px;
     min-height: 45px;
 
+    //PixelPerfect
+    margin-left: 5px;
+    margin-top: 20px;
+
     font-size: 30px;
     line-height: 45px;
+    letter-spacing: 0;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -121,8 +126,8 @@
     width: 398px;
     text-align: center;
     //PixelPerfect
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: -10px;
+    margin-bottom: 12px;
   }
 
   @media (max-width: $mobile-width-only) {

@@ -2,7 +2,7 @@
   width: 390px;
 
   @media (max-width: $tablet-width-only) {
-    width: 416px;
+    width: 390px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -17,20 +17,24 @@
   line-height: 32px;
   color: $darkblack;
 
-    //PixelPerfect
-    margin-bottom: 22px;
+  //PixelPerfect
+  margin-bottom: 22px;
 }
 
 .countries__list {
   @include reset-list;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(5, 1fr);
   row-gap: 11px;
 
+  @media (max-width: $tablet-width-only) {
+    //margin-left: 20px;
+  }
+
   @media (max-width: $mobile-width-only) {
-    margin-left: 20px;
+    margin-left: 0px;
     //column-gap: 20px;
   }
 }

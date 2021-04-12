@@ -54,8 +54,12 @@
     min-height: 45px;
     margin: 0 auto;
 
+    //PixelPerfect
+    padding-left: 9px;
+
     font-size: 30px;
     line-height: 45px;
+    letter-spacing: 0;
 
     &::after {
       background-image: none;
@@ -93,6 +97,9 @@
   @media (max-width: $tablet-width-only) {
     width: 343px;
     margin: 0 auto;
+
+    //PixelPerfect
+    margin-top: -10px;
     margin-bottom: 40px;
     text-align: center;
   }
@@ -112,6 +119,12 @@
 
   //PixelPerfect
   margin-bottom: 97px;
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    margin-left: 81px;
+    margin-top: -2px;
+  }
 }
 
 .trip__unit {
@@ -377,6 +390,7 @@
   @media (max-width: $tablet-width-only) {
     background-image: url("../img/croatiapic.jpg");
     //PixelPerfect
+    margin-top: 10px;
     margin-left: 160px;
     margin-right: 0;
     margin-bottom: 0;
@@ -439,12 +453,25 @@
   }
 }
 
+@media (max-width: $tablet-width-only) {
+  .trip__item {
+    &::after {
+      background-image: none;
+    }
+  }
+}
+
 .trip__item--active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
   margin-bottom: 240px;
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    margin-bottom: 0;
+  }
 
   @media (max-width: $mobile-width-only) {
     //PixelPerfect

@@ -97,24 +97,24 @@
         <div class="trip__slider slider" id="slider">
           <ul class="slider__list">
             <li class="slider__item">
-              <a class="slider__link slider__link--active" href="#greece">Греция</a>
+              <a class="slider__link slider__link--greece slider__link--active" href="#greece">Греция</a>
             </li>
             <li class="slider__item">
-              <a class="slider__link" href="#albania">Албания</a>
+              <a class="slider__link slider__link--albania" href="#albania">Албания</a>
             </li>
             <li class="slider__item">
-              <a class="slider__link" href="#macedonia">Македония</a>
+              <a class="slider__link slider__link--macedonia" href="#macedonia">Македония</a>
             </li>
             <li class="slider__item">
-              <a class="slider__link" href="#montenegro">Черногория</a>
+              <a class="slider__link slider__link--montenegro" href="#montenegro">Черногория</a>
             </li>
             <li class="slider__item">
-              <a class="slider__link" href="#croatia">Хорватия</a>
+              <a class="slider__link slider__link--croatia" href="#croatia">Хорватия</a>
             </li>
           </ul>
         </div>
         <ul class="trip__list">
-          <li class="trip__item trip__item--active">
+          <li class="trip__item trip__item--greece trip__item--active">
             <div class="trip__description description">
               <h3 class="description__country-name">Греция</h3>
               <p class="description__text description__text--greece">На севере Греции находится один из крупнейших
@@ -141,7 +141,7 @@
               </div>
             </div>
           </li>
-          <li class="trip__item">
+          <li class="trip__item trip__item--albania">
             <div class="trip__description description">
               <h3 class="description__country-name">Албания</h3>
               <p class="description__text description__text--albania">В Албании мы посетим Курорт Ксамиль. Этот курорт
@@ -154,7 +154,7 @@
             <div class="trip__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--albania">
                 <div class="feedback__unit feedback__unit--albania">
-                  <h4 class="feedback__title">Отзывы</h4>
+                  <h4 class="feedback__title feedback__title--albania">Отзывы</h4>
                   <p class="feedback__text">Замечательный курорт, обязательно стоит посетить. В
                     следующий раз возьму с собой
                     сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
@@ -163,7 +163,7 @@
               </div>
             </div>
           </li>
-          <li class="trip__item">
+          <li class="trip__item trip__item--macedonia">
             <div class="trip__description description">
               <h3 class="description__country-name">Македония</h3>
               <p class="description__text description__text--macedonia">В Македонии нашей целью будет посетить
@@ -186,7 +186,7 @@
               </div>
             </div>
           </li>
-          <li class="trip__item">
+          <li class="trip__item trip__item--montenegro">
             <div class="trip__description description">
               <h3 class="description__country-name">Черногория</h3>
               <p class="description__text description__text--montenegro">Черногория удивит нас самым большим в Европе
@@ -208,7 +208,7 @@
               </div>
             </div>
           </li>
-          <li class="trip__item">
+          <li class="trip__item trip__item--croatia">
             <div class="trip__description description">
               <h3 class="description__country-name">Хорватия</h3>
               <p class="description__text description__text--croatia">В Хорватии мы посетим необычайную пещеру названную
@@ -248,8 +248,8 @@
           </header>
           <ul class="prices__list promotion">
             <li class="promotion__item">
-              <h4 class="promotion__name">Комплексный <span
-                  class="promotion__amount promotion__amount--complex">$1999</span></h4>
+              <h4 class="promotion__name">Комплексный
+                <span class="promotion__amount promotion__amount--complex">$1999</span></h4>
               <p class="promotion__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
               <ul class="promotion__bundle">
                 <li class="promotion__option promotion__option--complex">Разработанный маршрут с гидом группы</li>
@@ -264,11 +264,11 @@
                   class="promotion__amount promotion__amount--economy">$1399</span></h4>
               <p class="promotion__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
               <ul class="promotion__bundle">
-                <li class="promotion__option">Разработанный маршрут с гидом группы</li>
-                <li class="promotion__option">Перелет и трансфер</li>
-                <li class="promotion__option">Проживание в хостелах при отелях</li>
-                <li class="promotion__option">Только завтраки в отелях</li>
-                <li class="promotion__option">Экскурсии по удивительно красивым местам Европы</li>
+                <li class="promotion__option promotion__option--economy">Разработанный маршрут с гидом группы</li>
+                <li class="promotion__option promotion__option--economy">Перелет и трансфер</li>
+                <li class="promotion__option promotion__option--economy">Проживание в хостелах при отелях</li>
+                <li class="promotion__option promotion__option--economy">Только завтраки в отелях</li>
+                <li class="promotion__option promotion__option--economy">Экскурсии по удивительно красивым местам Европы</li>
               </ul>
               <a class="promotion__button promotion__button--economy button" href="#">купить тур сейчас</a>
             </li>
@@ -335,7 +335,7 @@
             <td class="countries__item">Гренобль</td>
           </tr>
         </table>-->
-          <ul class="countries__list">
+        <ul class="countries__list">
           <li class="countries__item">Марсель</li>
           <li class="countries__item">Сардиния</li>
           <li class="countries__item">Корс</li>
@@ -351,7 +351,7 @@
           <li class="countries__item">Пальма</li>
           <li class="countries__item">Рим</li>
           <li class="countries__item">Гренобль</li>
-          </ul>
+        </ul>
       </div>
       <div class="page-footer__contacts contacts">
         <p class="contacts__title">Наши контакты</p>
@@ -409,7 +409,8 @@
     </div>
   </section>
   <!--</div>-->
-  <script src="../js/popup.js"></script>
+  <script src="./js/popup.min.js"></script>
+  <script src="./js/slider.min.js"></script>
 </body>
 
 </html>

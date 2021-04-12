@@ -12,8 +12,8 @@
   @media (max-width: $tablet-width-only) {
     width: 288px;
     min-height: 629px;
-
-    margin-bottom: 125px;
+    //PixelPerfect
+    margin-bottom: 0;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -34,9 +34,10 @@
   @media (max-width: $tablet-width-only) {
     display: flex;
     flex-direction: column;
+    //PixelPerfect
     margin-left: 0;
     margin-top: 30px;
-    margin-bottom: 11px;
+    margin-bottom: 13px;
 
     font-size: 24px;
     text-align: center;
@@ -53,6 +54,7 @@
 
   @media (max-width: $tablet-width-only) {
     padding: 0;
+    letter-spacing: 0;
   }
 }
 
@@ -60,7 +62,10 @@
   padding-left: 60px;
 
   @media (max-width: $tablet-width-only) {
-    padding: 0;
+    //PixelPerfect
+    padding-left: 0;
+    padding-top: 5px;
+    letter-spacing: 0px;
   }
 }
 
@@ -69,6 +74,13 @@
   margin-top: 40px;
   margin-left: 25px;
   letter-spacing: -0.8px;
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    margin-top: 27px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+  }
 }
 
 .promotion__text {
@@ -119,6 +131,11 @@
 
   //PixelPerfect
   margin-top: 30px;
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    margin-top: 22px;
+  }
 }
 
 .promotion__option {
@@ -152,7 +169,14 @@
   .promotion__option {
     width: 218px;
 
+    //PixelPerfect
     margin-bottom: 10px;
+    margin-left: 25px;
+  }
+
+  .promotion__option--economy {
+    //PixelPerfect
+    margin-bottom: 12px;
   }
 }
 

@@ -15,7 +15,7 @@
 
   @media (max-width: $tablet-width-only) {
     max-width: 768px;
-    min-height: 50px;
+    min-height: 48px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -36,7 +36,8 @@
     width: 44px;
     height: 17px;
     //PixelPerfect
-    margin-top: 19px;
+    margin-left: 20px;
+    margin-top: 14px;
     margin-right: 631px;
   }
 

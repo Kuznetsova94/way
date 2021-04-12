@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-   //PixelPerfect
+  //PixelPerfect
   padding-bottom: 15px;
   margin-bottom: 80px;
 
@@ -18,6 +18,15 @@
     height: 1px;
     bottom: 4px;
     left: 0;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    flex-wrap: nowrap;
+    overflow: scroll;
+
+    //PixelPerfect
+    margin-left: 40px;
+    margin-bottom: 30px;
   }
 }
 

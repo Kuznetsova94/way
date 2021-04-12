@@ -10,11 +10,15 @@
   @media (max-width: $tablet-width-only) {
     //flex-direction: column;
     max-width: 768px;
+    //PixelPerfect
+    margin-top: 25px;
     margin-bottom: 125px;
   }
 
   @media (max-width: $mobile-width-only) {
     max-width: 320px;
+    //PixelPerfect
+    margin-top: 0px;
     margin-bottom: 50px;
   }
 }
@@ -26,7 +30,8 @@
 
   @media (max-width: $tablet-width-only) {
     flex-direction: column;
-    margin-left: 0;
+    //PixelPerfect
+    margin-left: -20px;
   }
 }
 
@@ -41,7 +46,8 @@
 
   @media (max-width: $tablet-width-only) {
     order: 1;
-    margin-left: 0;
+    //PixelPerfect
+    margin-left: 20px;
   }
 }
 
@@ -77,6 +83,10 @@
     min-height: 45px;
 
     margin: 0 auto;
+    //PixelPerfect
+    padding-top: 2px;
+    padding-left: 65px;
+    margin-bottom: 20px;
 
     font-size: 30px;
     line-height: 45px;
@@ -117,8 +127,9 @@
     width: 726px;
     min-height: 84px;
     text-align: center;
-
+    //PixelPerfect
     margin-bottom: 30px;
+    margin-left: 20px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -184,7 +195,7 @@
     min-height: 32px;
 
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 13px;
     padding-left: 0;
 
     font-size: 18px;
@@ -203,7 +214,6 @@
   }
 }
 
-
 .prices__list {
   @include reset-list;
 
@@ -212,10 +222,14 @@
 
   @media (max-width: $tablet-width-only) {
     order: 2;
+
     column-gap: 50px;
+    //PixelPerfect
+    margin-left: 90px;
   }
 
-  @media (max-width: $tablet-width-only) {
+  @media (max-width: $mobile-width-only) {
     flex-direction: column;
+    margin-left: 0;
   }
 }

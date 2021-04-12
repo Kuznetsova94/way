@@ -15,6 +15,8 @@
     max-width: 768px;
     flex-wrap: wrap;
     padding-bottom: 50px;
+    //PixelPerfect
+    padding-top: 58px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -36,6 +38,11 @@
     height: 189px;
     top: 15px;
     right: 0;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    margin-left: 8px;
   }
 }
 
@@ -71,6 +78,9 @@
 
 @media (max-width: $tablet-width-only) {
   .page-footer__contacts {
+    //PixelPerfect
+    padding-left: 55px;
+
     &::after {
       background-image: none;
     }
@@ -98,6 +108,10 @@
   .page-footer__offer {
     position: relative;
 
+    //PixelPerfect
+    margin-top: 29px;
+    padding-left: 18px;
+
     &::before {
       content: "";
       position: absolute;
@@ -106,7 +120,7 @@
       background-position: 0 0;
       width: 726px;
       height: 1px;
-      top: 40px;
+      top: 0;
       right: 0;
     }
   }

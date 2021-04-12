@@ -40,14 +40,16 @@
     width: 768px;
     margin-bottom: 80px;
     // PixelPerfect
-    padding-top: 70px;
-    margin-left: 55px;
+    padding-top: 47px;
+    margin-left: 70px;
 
     &::before {
       background-image: url("../img/tablet-sunset.jpg");
       background-repeat: no-repeat;
-      width: 768px;
+      width: 765px;
       height: 455px;
+      top: -3px;
+      left: 0;
     }
   }
 }
@@ -132,6 +134,11 @@
   line-height: 24px;
   text-align: center;
 
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    margin-top: -10px;
+  }
+
   @media (max-width: $mobile-width-only) {
     width: 288px;
     text-align: center;
@@ -155,7 +162,7 @@
     width: 250px;
 
     //PixelPerfect
-    margin-top: 20px;
+    margin-top: 8px;
     margin-left: 204px;
 
     padding-top: 19px;
@@ -167,7 +174,6 @@
 
     //PixelPerfect
     margin-left: 16px;
-
     padding-left: 103px;
   }
 }
