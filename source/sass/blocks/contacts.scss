@@ -12,7 +12,7 @@
 
 .contacts__title {
   //PixelPerfect
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   font-weight: 600;
   font-size: 18px;
@@ -21,7 +21,7 @@
 
   @media (max-width: $mobile-width-only) {
     //PixelPerfect
-  margin-top: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -65,7 +65,7 @@
 .contacts__item--email {
   position: relative;
   //PixelPerfect
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   padding-left: 41px;
 
   &::before {
@@ -90,6 +90,8 @@
   //PixelPerfect
   padding-left: 41px;
 
+  letter-spacing: 1px;
+
   &::before {
     content: "";
     position: absolute;
@@ -101,4 +103,8 @@
     bottom: 0;
     left: 0;
   }
+}
+
+.contacts__link {
+  color: $carrot;
 }

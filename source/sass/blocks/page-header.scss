@@ -24,15 +24,12 @@
 }
 
 .page-header__logo {
-  //order: 2;
-  //box-sizing: border-box;
-  //z-index: 1;
+  width: 65px;
+  height: 26px;
 
-  //text-align: center;
-  width: 57px;
-  height: 22px;
   //PixelPerfect
-  margin-top: 39px;
+  margin-left: -5px;
+  margin-top: 38px;
   margin-right: 610px;
 
   @media (max-width: $tablet-width-only) {
@@ -62,6 +59,7 @@
   position: relative;
   //PixelPerfect
   margin: 0;
+  margin-left: -25px;
   padding-left: 15px;
 
   font-size: 18px;
@@ -78,7 +76,15 @@
     background-position: 0 0;
     width: 30px;
     height: 30px;
-    top: 0;
-    left: -6px;
+    top: -4px;
+    left: -27px;
+  }
+}
+
+.page-header__number:hover {
+  color: $carrot;
+
+  &::before {
+    background-image: url("../img/hover-phone.svg");
   }
 }

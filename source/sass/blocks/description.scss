@@ -1,13 +1,11 @@
-/*.description {
-margin-right: 100px;
-}*/
-
 .description__country-name {
   position: relative;
   width: 425px;
   min-height: 79px;
 
   padding-bottom: 20px;
+  //PixelPerfect
+  margin-top: 7px;
 
   font-weight: 600;
   font-size: 55px;
@@ -24,7 +22,7 @@ margin-right: 100px;
     background-position: 0 0;
     width: 175px;
     height: 3px;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
   }
 }
@@ -59,7 +57,8 @@ margin-right: 100px;
 .description__text {
   width: 370px;
 
-  margin-top: 30px;
+  //PixelPerfect
+  margin-top: -30px;
   margin-bottom: 50px;
 
   font-weight: 400;

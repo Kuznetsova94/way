@@ -16,19 +16,22 @@
   font-size: 18px;
   line-height: 32px;
   color: $darkblack;
+
+    //PixelPerfect
+    margin-bottom: 22px;
 }
 
 .countries__list {
-  //display: grid;
-  //grid-template-columns: 1fr 1fr 1fr;
-  //grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  //row-gap: 10px;
+  @include reset-list;
 
-  //@include reset-list;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 11px;
 
   @media (max-width: $mobile-width-only) {
     margin-left: 20px;
-   //column-gap: 20px;
+    //column-gap: 20px;
   }
 }
 

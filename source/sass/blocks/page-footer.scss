@@ -4,9 +4,11 @@
 
 .page-footer__wrapper {
   display: flex;
-
   width: 1170px;
   margin: 0 auto;
+  //PixelPerfect
+  padding-top: 53px;
+  padding-left: 27px;
   padding-bottom: 75px;
 
   @media (max-width: $tablet-width-only) {
@@ -39,7 +41,6 @@
 
 @media (max-width: $mobile-width-only) {
   .page-footer__countries {
-
     &::after {
       background-image: url("../img/mobile-footer-line.svg");
       width: 288px;
@@ -70,7 +71,6 @@
 
 @media (max-width: $tablet-width-only) {
   .page-footer__contacts {
-
     &::after {
       background-image: none;
     }
@@ -79,7 +79,6 @@
 
 @media (max-width: $mobile-width-only) {
   .page-footer__contacts {
-
     &::after {
       background-image: url("../img/mobile-footer-line.svg");
       width: 288px;
@@ -115,7 +114,6 @@
 
 @media (max-width: $mobile-width-only) {
   .page-footer__offer {
-
     &::before {
       background-image: none;
     }

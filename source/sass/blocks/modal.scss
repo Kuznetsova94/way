@@ -1,3 +1,11 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+}
+
 .modal__wrapper {
   position: relative;
   width: 728px;
@@ -30,4 +38,21 @@
   line-height: 43px;
   color: $lightblack;
   text-align: center;
+}
+
+// Открытие модального окна
+.modal__show {
+  display: block;
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+
+  0% {
+    transform: translate(-500px, -2000px);
+  }
+
+  100% {
+    transform: translate(-500px, -50%);
+  }
 }

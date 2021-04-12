@@ -3,13 +3,12 @@
 }
 
 .prices__wrapper {
-  display: flex;
   width: 1450px;
   margin: 0 auto;
   margin-bottom: 138px;
 
   @media (max-width: $tablet-width-only) {
-    flex-direction: column;
+    //flex-direction: column;
     max-width: 768px;
     margin-bottom: 125px;
   }
@@ -20,12 +19,25 @@
   }
 }
 
+.prices__unit {
+  display: flex;
+  //PixelPerfect
+  margin-left: 143px;
+
+  @media (max-width: $tablet-width-only) {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
 .prices__header {
   display: flex;
   flex-direction: column;
 
   order: 2;
   margin-left: 110px;
+  //PixelPerfect
+  margin-top: 85px;
 
   @media (max-width: $tablet-width-only) {
     order: 1;
@@ -38,8 +50,7 @@
   width: 295px;
   min-height: 79px;
 
-  //PixelPerfect
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 
   font-weight: 600;
   font-size: 55px;
@@ -93,7 +104,9 @@
   width: 295px;
   min-height: 79px;
 
-  margin-bottom: 60px;
+  //PixelPerfect
+  margin-top: -15px;
+  margin-bottom: 46px;
 
   font-weight: 400;
   font-size: 16px;
@@ -118,7 +131,9 @@
 
 .prices__contact {
   width: 249px;
-  margin-bottom: 13px;
+
+  //PixelPerfect
+  margin-left: 45px;
 
   font-weight: 500;
   font-size: 22px;
@@ -141,7 +156,9 @@
   position: relative;
   width: 249px;
 
-  padding-left: 40px;
+  padding-left: 45px;
+  //PixelPerfect
+  margin-top: -10px;
 
   font-weight: 400;
   font-size: 20px;
@@ -157,7 +174,7 @@
     width: 30px;
     height: 30px;
     bottom: 0;
-    left: 0;
+    left: -5px;
   }
 }
 

@@ -47,23 +47,13 @@
         <!--</div>-->
       </nav>
       <div class="page-header__telephone">
-        <p class="page-header__number"> +7 (499) -784-68-46</p>
+        <a class="page-header__number" href="tel:+749978468446"> +7 (499) -784-684-46</a>
       </div>
     </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт про путешествия по Европе</h1>
     <section class="introduction">
-      <!--<picture class="introduction__picture">
-          <source type="image/webp" media="(min-width: 1200px)"
-            srcset="img/desktop-mainpic.webp 1x, img/desktop-mainpic@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/tablet-mainpic.webp 1x, img/tablet-mainpic@2x.webp 2x">
-
-          <source media="(min-width: 1200px)" srcset="img/desktop-mainpic.jpg 1x, img/desktop-mainpic@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/tablet-mainpic.jpg 1x, img/tablet-mainpic@2x.jpg 2x">
-          <img src="img/mobile-mainpic.jpg" alt="Приветственные слова для посетителей сайта о путешествиях по Европе">
-        </picture>-->
       <div class="introduction__wrapper">
         <div class="introduction__unit">
           <h2 class="introduction__title">Путешествие по Европе</h2>
@@ -82,15 +72,49 @@
           <p class="trip__slogan">Вы можете выбрать полный тур или частичный, с посещением первых 3
             мест</p>
           <ul class="trip__catalog">
-            <li class="trip__unit trip__unit--greece">Греция</li>
-            <li class="trip__unit trip__unit--albania">Албания</li>
-            <li class="trip__unit trip__unit--macedonia">Македония</li>
-            <li class="trip__unit trip__unit--montenegro">Черногория</li>
-            <li class="trip__unit trip__unit--croatia">Хорватия</li>
+            <li class="trip__unit trip__unit--greece">
+              <p class="trip__name">Греция</p>
+              <p class="trip__link"><a class="trip__button" href="#slider">смотреть подробнее</a></p>
+            </li>
+            <li class="trip__unit trip__unit--albania">
+              <p class="trip__name">Албания</p>
+              <p class="trip__link"><a class="trip__button" href="#slider">смотреть подробнее</a></p>
+            </li>
+            <li class="trip__unit trip__unit--macedonia">
+              <p class="trip__name">Македония</p>
+              <p class="trip__link"><a class="trip__button" href="#slider">смотреть подробнее</a></p>
+            </li>
+            <li class="trip__unit trip__unit--montenegro">
+              <p class="trip__name">Черногория</p>
+              <p class="trip__link"><a class="trip__button" href="#slider">смотреть подробнее</a></p>
+            </li>
+            <li class="trip__unit trip__unit--croatia">
+              <p class="trip__name">Хорватия</p>
+              <p class="trip__link"><a class="trip__button" href="#slider">смотреть подробнее</a></p>
+            </li>
           </ul>
         </header>
-        <ul class="trip__list" id="slider">
-          <li class="trip__item">
+        <div class="trip__slider slider" id="slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <a class="slider__link slider__link--active" href="#greece">Греция</a>
+            </li>
+            <li class="slider__item">
+              <a class="slider__link" href="#albania">Албания</a>
+            </li>
+            <li class="slider__item">
+              <a class="slider__link" href="#macedonia">Македония</a>
+            </li>
+            <li class="slider__item">
+              <a class="slider__link" href="#montenegro">Черногория</a>
+            </li>
+            <li class="slider__item">
+              <a class="slider__link" href="#croatia">Хорватия</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="trip__list">
+          <li class="trip__item trip__item--active">
             <div class="trip__description description">
               <h3 class="description__country-name">Греция</h3>
               <p class="description__text description__text--greece">На севере Греции находится один из крупнейших
@@ -212,42 +236,44 @@
     </section>
     <section class="prices" id="prices">
       <div class="prices__wrapper">
-        <header class="prices__header">
-          <h2 class="prices__title">Цены</h2>
-          <p class="prices__text">Специально для Вас мы разработали 2 пакета цен с разными условиями,
-            отталкиваясь от Ваших
-            потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все
-            100%!</p>
-          <p class="prices__contact"> Свяжитесь с нами </p>
-          <p class="prices__number">+7 (499) -784-684-46</p>
-        </header>
-        <ul class="prices__list promotion">
-          <li class="promotion__item">
-            <h4 class="promotion__name">Комплексный <span
-                class="promotion__amount promotion__amount--complex">$1999</span></h4>
-            <p class="promotion__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-            <ul class="promotion__bundle">
-              <li class="promotion__option">Разработанный маршрут с гидом группы</li>
-              <li class="promotion__option">Перелет, трансфер и проживание в отелях</li>
-              <li class="promotion__option">Завтраки, ужины в отелях и ланчи на природе</li>
-              <li class="promotion__option">Экскурсии по удивительно красивым местам Европы</li>
-            </ul>
-            <a class="promotion__button promotion__button--complex button" href="#">купить тур сейчас</a>
-          </li>
-          <li class="promotion__item">
-            <h4 class="promotion__name">Экономный <span
-                class="promotion__amount promotion__amount--economy">$1399</span></h4>
-            <p class="promotion__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-            <ul class="promotion__bundle">
-              <li class="promotion__option">Разработанный маршрут с гидом группы</li>
-              <li class="promotion__option">Перелет и трансфер</li>
-              <li class="promotion__option">Проживание в хостелах при отелях</li>
-              <li class="promotion__option">Только завтраки в отелях</li>
-              <li class="promotion__option">Экскурсии по удивительно красивым местам Европы</li>
-            </ul>
-            <a class="promotion__button promotion__economy button" href="#">купить тур сейчас</a>
-          </li>
-        </ul>
+        <div class="prices__unit">
+          <header class="prices__header">
+            <h2 class="prices__title">Цены</h2>
+            <p class="prices__text">Специально для Вас мы разработали 2 пакета цен с разными условиями,
+              отталкиваясь от Ваших
+              потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все
+              100%!</p>
+            <p class="prices__contact"> Свяжитесь с нами </p>
+            <p class="prices__number">+7 (499) -784-684-46</p>
+          </header>
+          <ul class="prices__list promotion">
+            <li class="promotion__item">
+              <h4 class="promotion__name">Комплексный <span
+                  class="promotion__amount promotion__amount--complex">$1999</span></h4>
+              <p class="promotion__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+              <ul class="promotion__bundle">
+                <li class="promotion__option promotion__option--complex">Разработанный маршрут с гидом группы</li>
+                <li class="promotion__option">Перелет, трансфер и проживание в отелях</li>
+                <li class="promotion__option">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="promotion__option">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <a class="promotion__button promotion__button--complex button" href="#">купить тур сейчас</a>
+            </li>
+            <li class="promotion__item">
+              <h4 class="promotion__name promotion__name--economy">Экономный <span
+                  class="promotion__amount promotion__amount--economy">$1399</span></h4>
+              <p class="promotion__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+              <ul class="promotion__bundle">
+                <li class="promotion__option">Разработанный маршрут с гидом группы</li>
+                <li class="promotion__option">Перелет и трансфер</li>
+                <li class="promotion__option">Проживание в хостелах при отелях</li>
+                <li class="promotion__option">Только завтраки в отелях</li>
+                <li class="promotion__option">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <a class="promotion__button promotion__button--economy button" href="#">купить тур сейчас</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="questions">
@@ -282,7 +308,7 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__countries countries">
         <p class="countries__title">Следующие путешествия</p>
-        <table class="countries__list">
+        <!--<table class="countries__list">
           <tr class="countries__row">
             <td class="countries__item">Марсель</td>
             <td class="countries__item">Сардиния</td>
@@ -308,7 +334,8 @@
             <td class="countries__item">Рим</td>
             <td class="countries__item">Гренобль</td>
           </tr>
-          <!--
+        </table>-->
+          <ul class="countries__list">
           <li class="countries__item">Марсель</li>
           <li class="countries__item">Сардиния</li>
           <li class="countries__item">Корс</li>
@@ -324,20 +351,19 @@
           <li class="countries__item">Пальма</li>
           <li class="countries__item">Рим</li>
           <li class="countries__item">Гренобль</li>
-          -->
-        </table>
+          </ul>
       </div>
       <div class="page-footer__contacts contacts">
         <p class="contacts__title">Наши контакты</p>
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--email">
-            puteshestviemechta@gmail.ru
+            <a class="contacts__link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
           </li>
           <li class="contacts__item contacts__item--mail">
             Почта
           </li>
           <li class="contacts__item contacts__item--telephone">
-            +7 (499) -784-684-46
+            <a class="contacts__link" href="tel:+74997846846">+7 (499) -784-684-46</a>
           </li>
         </ul>
       </div>
@@ -351,7 +377,7 @@
     </div>
   </footer>
   <!--POPUPS-->
-  <div class="popup">
+  <section class="popup">
     <div class="popup__wrapper">
       <h4 class="popup__title">Купить тур</h4>
       <form class="popup__form application" method="get">
@@ -361,26 +387,29 @@
             <li class="application__item application__item--telephone">
               <label class="visually-hidden" for="telephone-application-field">
                 Контактный телефон</label>
-              <input class="application__field application__field--telephone" type="text" name="telephone" id="telephone--application-field"
-                placeholder="+7 Введите 10 цифр номера">
+              <input class="application__field application__field--telephone" type="tel" name="telephone"
+                id="telephone-application-field" pattern="[0-9]{10}" placeholder="+7 Введите 10 цифр номера" autofocus>
             </li>
             <li class="application__item application__item--email">
               <label class="visually-hidden" for="email-application-field">Электронная почта</label>
-              <input class="application__field application__field--email" type="text" name="email" id="email-application-field" placeholder="E-mail">
+              <input class="application__field application__field--email" type="email" name="email"
+                id="email-application-field" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="E-mail">
             </li>
           </ul>
         </fieldset>
       </form>
-      <a class="popup__button button" href="#">отправить</a>
+      <button class="popup__button button" href="#">отправить</button>
+      <button class="popup__close">Закрыть окно</button>
     </div>
-  </div>
-  <div class="modal">
+  </section>
+  <section class="modal">
     <div class="modal__wrapper">
       <p class="modal__text">Форма успешно отправлена, спасибо! :)</p>
+      <button class="modal__close">Закрыть окно</button>
     </div>
-  </div>
+  </section>
   <!--</div>-->
-  <!--<script src="../js/main-navigation.js"></script>-->
+  <script src="../js/popup.js"></script>
 </body>
 
 </html>

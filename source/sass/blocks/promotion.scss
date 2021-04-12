@@ -2,6 +2,9 @@
   width: 370px;
   min-height: 672px;
 
+  //PixelPerfect
+  margin-top: 16px;
+
   border: 1px solid $greyopacity;
   box-sizing: border-box;
   border-radius: 6px;
@@ -19,13 +22,13 @@
 }
 
 .promotion__name {
-  margin-bottom: 36px;
-  margin-left: 30px;
+  //PixelPerfect
+  margin-bottom: 37px;
+  margin-left: 27px;
 
   font-weight: 600;
   font-size: 28px;
   line-height: 38px;
-  letter-spacing: -1.27px;
   color: $greylight;
 
   @media (max-width: $tablet-width-only) {
@@ -40,11 +43,40 @@
   }
 }
 
+.promotion__amount {
+  //PixelPerfect
+  letter-spacing: -1.3px;
+}
+
+.promotion__amount--complex {
+  padding-left: 20px;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 0;
+  }
+}
+
+.promotion__amount--economy {
+  padding-left: 60px;
+
+  @media (max-width: $tablet-width-only) {
+    padding: 0;
+  }
+}
+
+.promotion__name--economy {
+  //PixelPerfect
+  margin-top: 40px;
+  margin-left: 25px;
+  letter-spacing: -0.8px;
+}
+
 .promotion__text {
   position: relative;
   width: 289px;
   min-height: 48px;
-  margin-left: 30px;
+  //PixelPerfect
+  margin-left: 26px;
   padding-bottom: 28px;
 
   font-weight: 400;
@@ -84,13 +116,17 @@
 
 .promotion__bundle {
   @include reset-list;
+
+  //PixelPerfect
+  margin-top: 30px;
 }
 
 .promotion__option {
   position: relative;
   width: 280px;
 
-  padding-left: 30px;
+  //PixelPerfect
+  padding-left: 26px;
   margin-left: 30px;
   margin-bottom: 15px;
 
@@ -107,8 +143,8 @@
     background-position: 0 0;
     width: 14px;
     height: 12px;
-    top: 10px;
-    left: 0;
+    top: 9px;
+    left: -4px;
   }
 }
 
@@ -120,27 +156,18 @@
   }
 }
 
-.promotion__amount--complex {
-  padding-left: 20px;
-
-  @media (max-width: $tablet-width-only) {
-    padding: 0;
-  }
-}
-
-.promotion__amount--economy {
-  padding-left: 50px;
-
-  @media (max-width: $tablet-width-only) {
-    padding: 0;
-  }
+.promotion__option--complex {
+  //PixelPerfect
+  margin-bottom: 10px;
 }
 
 .promotion__button {
   width: 310px;
   min-height: 75px;
 
-  margin: 30px;
+  //PixelPerfect
+  margin-top: 30px;
+  margin-left: 26px;
   padding-top: 30px;
   padding-left: 70px;
 
@@ -154,35 +181,38 @@
   }
 }
 
+.promotion__button--complex {
+  //PixelPerfect
+  margin-top: 53px;
+}
+
 @media (max-width: $tablet-width-only) {
   .promotion__button--complex {
     margin-top: 45px;
   }
-  .promotion__button--economy{
+
+  .promotion__button--economy {
     margin-top: 30px;
   }
 }
 
-
 //Интерактивность карточки
 .promotion__item:hover {
   border: 3px solid $carrot;
+}
 
-  .promotion__name {
-    color: $carrot;
+.promotion__item:hover .promotion__name {
+  color: $carrot;
+}
+
+.promotion__item:hover .promotion__text {
+  &::after {
+    background-image: url("../img/desktop-hover-price-line.svg");
   }
+}
 
-  .promotion__text {
-
-    &::after {
-      background-image: url("../img/desktop-hover-price-line.svg");
-    }
-  }
-
-  .promotion__option {
-
-    &::before {
-      background-image: url("../img/hover.svg");
-    }
+.promotion__item:hover .promotion__option {
+  &::before {
+    background-image: url("../img/hover.svg");
   }
 }
