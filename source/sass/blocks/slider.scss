@@ -23,10 +23,16 @@
   @media (max-width: $tablet-width-only) {
     flex-wrap: nowrap;
     overflow: scroll;
-
     //PixelPerfect
     margin-left: 40px;
     margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    margin-top: -57px;
+    margin-bottom: 23px;
+    margin-left: 15px;
   }
 }
 

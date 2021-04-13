@@ -51,6 +51,10 @@
     width: 288px;
     min-height: 36px;
 
+    //PixelPerfect
+    margin: 0;
+    padding-left: 0;
+
     font-size: 24px;
     line-height: 36px;
     text-align: center;
@@ -83,6 +87,12 @@
 
   @media (max-width: $mobile-width-only) {
     width: 288px;
+
+    //PixelPerfect
+    margin-top: -1px;
+    margin-left: 0;
+    line-height: 28px;
+    margin-bottom: 35px;
   }
 }
 
@@ -112,5 +122,9 @@
   @media (max-width: $mobile-width-only) {
     width: 288px;
     padding-left: 72px;
+
+    //PixelPerfect
+    margin-top: -3px;
+    margin-left: 0;
   }
 }

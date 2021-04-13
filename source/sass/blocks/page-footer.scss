@@ -21,7 +21,10 @@
 
   @media (max-width: $mobile-width-only) {
     max-width: 320px;
+    //PixelPerfect
+    padding-top: 52px;
     padding-bottom: 25px;
+    padding-left: 40px;
   }
 }
 
@@ -52,8 +55,8 @@
       background-image: url("../img/mobile-footer-line.svg");
       width: 288px;
       height: 1px;
-      bottom: 0;
-      left: 0;
+      top: 360px;
+      left: -20px;
     }
   }
 }
@@ -89,12 +92,15 @@
 
 @media (max-width: $mobile-width-only) {
   .page-footer__contacts {
+    //PixelPerfect
+    margin-top: 15px;
+
     &::after {
       background-image: url("../img/mobile-footer-line.svg");
       width: 288px;
       height: 1px;
-      bottom: 0;
-      left: 0;
+      top: 170px;
+      left: -10px;
     }
   }
 }
@@ -128,6 +134,10 @@
 
 @media (max-width: $mobile-width-only) {
   .page-footer__offer {
+    //PixelPerfect
+    margin-top: 24px;
+    padding-left: 9px;
+
     &::before {
       background-image: none;
     }

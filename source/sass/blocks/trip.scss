@@ -17,7 +17,7 @@
   @media (max-width: $mobile-width-only) {
     max-width: 320px;
     //PixelPerfect
-    margin-top: 108px;
+    margin-top: 83px;
   }
 }
 
@@ -76,7 +76,7 @@
     line-height: 36px;
 
     //PixelPerfect
-    padding-left: 50px;
+    padding-left: 43px;
   }
 }
 
@@ -124,6 +124,12 @@
     //PixelPerfect
     margin-left: 81px;
     margin-top: -2px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    margin-left: 15px;
+    margin-top: 0;
   }
 }
 
@@ -223,7 +229,7 @@
   .trip__unit--greece {
     //PixelPerfect
     margin-right: 0;
-    //margin-bottom: 19px;
+    margin-bottom: 34px;
 
     &::before {
       bottom: 0;
@@ -267,7 +273,7 @@
   .trip__unit--albania {
     //PixelPerfect
     margin-right: 0;
-    //margin-bottom: 19px;
+    margin-bottom: 35px;
 
     &::before {
       bottom: 0;
@@ -311,7 +317,7 @@
   .trip__unit--macedonia {
     //PixelPerfect
     margin-right: 0;
-    //margin-bottom: 19px;
+    margin-bottom: 36px;
 
     &::before {
       bottom: 0;
@@ -357,7 +363,7 @@
   .trip__unit--montenegro {
     //PixelPerfect
     margin-right: 0;
-    //margin-bottom: 19px;
+    margin-bottom: 24px;
 
     &::before {
       bottom: 0;
@@ -402,7 +408,6 @@
     //PixelPerfect
     margin-right: 0;
     margin-left: 0;
-    //margin-bottom: 19px;
 
     &::before {
       bottom: 0;

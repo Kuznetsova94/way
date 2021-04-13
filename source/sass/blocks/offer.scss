@@ -21,6 +21,11 @@
     margin: 0 auto;
     margin-top: 30px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    margin-left: -8px;
+  }
 }
 
 .offer__text {
