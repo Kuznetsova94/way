@@ -1,21 +1,23 @@
 .popup {
   display: none;
+}
+
+.popup__wrapper {
   position: fixed;
   z-index: 100;
-  top: 50%;
-  left: 50%;
+  top: 30%;
+  left: 30%;
   width: 728px;
   height: 444px;
-  margin: 0 auto;
 
   background-color: $darkwhite;
 }
 
-.popup__wrapper {
+.popup__unit {
   width: 390px;
   position: relative;
   //PixelPerfect
-  padding-left: 338px;
+  padding-left: 383px;
 
   &::before {
     content: "";
@@ -23,18 +25,8 @@
     background-image: url("../img/desktop-popup.jpg");
     width: 338px;
     height: 444px;
-    top: 0;
+    top: -32px;
     left: 0;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/close-menu.svg");
-    width: 22px;
-    height: 22px;
-    top: 20px;
-    right: 20px;
   }
 }
 
@@ -50,15 +42,90 @@
 }
 
 .popup__title {
+  position: relative;
   //PixelPerfect
-  padding-top: 72px;
+  padding-top: 40px;
   padding-left: 75px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 
   font-weight: 600;
   font-size: 25px;
   line-height: 43px;
   color: $lightblack;
+}
+
+.popup__close {
+  position: absolute;
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-image: url("../img/close-menu.svg");
+  width: 22px;
+  height: 22px;
+  top: -13px;
+  right: 65px;
+}
+
+.popup__button {
+  border: none;
+  width: 175px;
+  min-height: 50px;
+
+  //PixelPerfect
+  margin-top: 8px;
+  margin-left: 62px;
+  padding-top: 9px;
+  padding-left: 5px;
+}
+
+@media (max-width: $tablet-width-only) {
+  .popup {
+    width: 100vw;
+  }
+
+  .popup__wrapper {
+    top: 20%;
+    left: 15%;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .popup__wrapper {
+    width: 320px;
+    height: 568px;
+    background-color: $white;
+
+    top: 20%;
+    left: 27%;
+  }
+
+  .popup__unit {
+    width: 320px;
+    padding-left: 0;
+
+    &::before {
+      background-image: none;
+    }
+  }
+
+  .popup__title {
+    //PixelPerfect
+    padding-top: 65px;
+    padding-left: 87px;
+  }
+
+  .popup__close {
+    top: -13px;
+    right: 20px;
+  }
+
+  .popup__button {
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 290px;
+    cursor: pointer;
+  }
 }
 
 // Открытие модального окна
@@ -70,10 +137,22 @@
 @keyframes bounce {
 
   0% {
-    transform: translate(-500px, -2000px);
+    top: 0px;
+  }
+
+  25% {
+    top: 200px;
+  }
+
+  50% {
+    top: 100px;
+  }
+
+  75% {
+    top: 200px;
   }
 
   100% {
-    transform: translate(-500px, -50%);
+    top: 0px;
   }
 }

@@ -2,27 +2,42 @@
   display: none;
   position: fixed;
   z-index: 100;
-  top: 50%;
-  left: 50%;
+  top: 28%;
+  left: 30%;
 }
 
 .modal__wrapper {
   position: relative;
   width: 728px;
-  height: 444px;
+  height: 448px;
   margin: 0 auto;
 
   background-color: $darkwhite;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/close-menu.svg");
-    width: 22px;
-    height: 22px;
-    top: 20px;
-    right: 20px;
+@media (max-width: $tablet-width-only) {
+  .modal {
+    width: 100vw;
   }
+
+  .modal__wrapper {
+    top: 20%;
+    left: 15%;
+  }
+}
+
+.modal__close {
+  content: "";
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  background-image: url("../img/close-menu.svg");
+  width: 22px;
+  height: 22px;
+  top: 20px;
+  right: 20px;
 }
 
 .modal__text {
@@ -40,19 +55,50 @@
   text-align: center;
 }
 
+@media (max-width: $mobile-width-only) {
+  .modal__wrapper {
+    width: 320px;
+    height: 568px;
+    background-color: $white;
+    margin-left: 0;
+
+    top: 20%;
+    left: 0;
+  }
+
+  .modal__text {
+    width: 250px;
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
+}
+
 // Открытие модального окна
 .modal__show {
   display: block;
-  animation: bounce 0.5s;
+  animation: success 0.5s;
 }
 
-@keyframes bounce {
+@keyframes sucess {
 
   0% {
-    transform: translate(-500px, -2000px);
+    top: 0px;
+  }
+
+  25% {
+    top: 200px;
+  }
+
+  50% {
+    top: 100px;
+  }
+
+  75% {
+    top: 200px;
   }
 
   100% {
-    transform: translate(-500px, -50%);
+    top: 0px;
   }
 }

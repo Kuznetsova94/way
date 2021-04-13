@@ -96,9 +96,111 @@
   }
 }
 
+.description__country-name--albania {
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    padding-left: 0px;
+  }
+}
+
 .description__text--albania {
   //PixelPerfect
   margin-bottom: 57px;
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 63px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+      //PixelPerfect
+      margin-top: -1px;
+      margin-left: 0;
+      margin-bottom: 35px;
+  }
+}
+
+.description__country-name--macedonia {
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    padding-left: 0px;
+  }
+}
+
+.description__text--macedonia {
+  //PixelPerfect
+  margin-top: -27px;
+  margin-bottom: 52px;
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 63px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    margin-top: -1px;
+    margin-left: 0;
+    margin-bottom: 35px;
+}
+}
+
+.description__country-name--montenegro {
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    padding-left: 0px;
+  }
+}
+
+.description__text--montenegro {
+  //PixelPerfect
+  margin-top: -27px;
+  margin-bottom: 52px;
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 68px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    margin-top: -1px;
+    margin-left: 0;
+    margin-bottom: 35px;
+}
+}
+
+.description__country-name--croatia {
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    padding-left: 0px;
+  }
+}
+
+.description__text--croatia {
+  //PixelPerfect
+  margin-top: -27px;
+  margin-bottom: 52px;
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 63px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    margin-top: -1px;
+    margin-left: 0;
+    margin-bottom: 35px;
+}
 }
 
 .description__button {
@@ -112,6 +214,7 @@
     min-height: 50px;
 
     //PixelPerfect
+    margin-top: 25px;
     margin-bottom: 0;
     margin-left: 260px;
 

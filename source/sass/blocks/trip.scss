@@ -157,8 +157,9 @@
 .trip__unit:hover .trip__link {
   display: flex;
 
-  @media (max-width: $tablet-width-only) {
-    display: none;
+ @media (max-width: $tablet-width-only) {
+    width: 288px;
+    height: 425px;
   }
 }
 
@@ -206,6 +207,10 @@
   text-transform: uppercase;
   background-color: transparent;
   color: $white;
+
+  @media (max-width: $tablet-width-only) {
+    margin: auto;
+  }
 }
 
 // Картинки, соотв. странам

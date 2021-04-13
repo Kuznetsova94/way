@@ -16,6 +16,10 @@
     background-color: $orange;
   }
 
+  &:focus {
+    background-color: $orange;
+  }
+
   @media (max-width: $tablet-width-only) {
     font-weight: 500;
     font-size: 10px;

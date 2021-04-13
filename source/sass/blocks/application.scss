@@ -7,8 +7,8 @@
 }
 
 .application__field {
-  width: 270px;
-  min-height: 50px;
+  width: 265px;
+  min-height: 45px;
   border: 1px solid $greyopacity;
 
   &::placeholder {
@@ -27,12 +27,8 @@
   margin-bottom: 20px;
 }
 
-.popup__button {
-  width: 176px;
-  min-height: 50px;
-
-  //PixelPerfect
-  margin-left: 110px;
-  padding-top: 19px;
-  padding-left: 40px;
+@media (max-width: $mobile-width-only) {
+  .application__field {
+    width: 285px;
+  }
 }

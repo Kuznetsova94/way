@@ -1,7 +1,8 @@
 //Модальное окно
 const popupField = document.querySelector(".popup");
 // Кнопки открыть и закрыть
-const openButton = document.querySelector(".promotion__button");
+const openButtonComplex = document.querySelector(".promotion__button--complex");
+const openButtonEconomy = document.querySelector(".promotion__button--economy");
 const closeButton = document.querySelector(".popup__close");
 
 //Модальное окно об успешной отправке
@@ -27,7 +28,19 @@ try {
 }
 
 //Если все формы заполнены, появляется сообщение об успешной отправке
-openButton.addEventListener("click", function (evt) {
+openButtonComplex.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupField.classList.add("popup__show");
+
+  if (storage) {
+    telephoneForm.value = storage;
+    emailForm.focus();
+  } else {
+    telephoneForm.focus();
+  }
+});
+
+openButtonEconomy.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupField.classList.add("popup__show");
 
@@ -49,6 +62,7 @@ successButton.addEventListener("click", function (evt) {
   if (telephoneForm.value || emailForm.value) {
     evt.preventDefault();
     successField.classList.add("modal__show");
+    popupField.classList.remove("popup__show");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("telephone", telephoneForm.value);
@@ -62,8 +76,8 @@ closeSuccessButton.addEventListener("click", function (evt) {
 });
 
 //Закрыть окно с помощью esc
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
+document.addEventListener("keydown", function (evt) {
+  if (evt.key === 'Escape' || evt.key === 'Esc') {
     if (popupField.classList.contains("popup__show") || successField.classList.contains("modal__show")) {
       evt.preventDefault();
       successField.classList.remove("modal__show");

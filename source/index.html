@@ -5,12 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Way</title>
-  <!--<link rel="stylesheet" href="./style.min.css">-->
+  <link rel="preload" href="../build/fonts/montserrat-v15-cyrillic-regular.woff2" as="font" type="font/woff2"
+    crossorigin>
+  <link rel="preload" href="../build/fonts/montserrat-v15-cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../build/fonts/montserrat-v15-cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -29,7 +28,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <!--<div class="main-nav__wrapper">-->
-        <ul class="main-nav__list main-nav__list--close site-list">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="#trip">
               О путешествии
@@ -41,7 +40,7 @@
             </a>
           </li>
         </ul>
-        <button class="main-nav__close" type="button">
+        <button class="main-nav__close main-nav__close--active" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
         <!--</div>-->
@@ -74,41 +73,41 @@
           <ul class="trip__catalog">
             <li class="trip__unit trip__unit--greece">
               <p class="trip__name">Греция</p>
-              <p class="trip__link"><a class="trip__button" href="#slider">смотреть подробнее</a></p>
+              <p class="trip__link"><a class="trip__button" href="#greece">смотреть подробнее</a></p>
             </li>
             <li class="trip__unit trip__unit--albania">
               <p class="trip__name">Албания</p>
-              <p class="trip__link"><a class="trip__button" href="#slider">смотреть подробнее</a></p>
+              <p class="trip__link"><a class="trip__button" href="#albania">смотреть подробнее</a></p>
             </li>
             <li class="trip__unit trip__unit--macedonia">
               <p class="trip__name">Македония</p>
-              <p class="trip__link"><a class="trip__button" href="#slider">смотреть подробнее</a></p>
+              <p class="trip__link"><a class="trip__button" href="#macedonia">смотреть подробнее</a></p>
             </li>
             <li class="trip__unit trip__unit--montenegro">
               <p class="trip__name">Черногория</p>
-              <p class="trip__link"><a class="trip__button" href="#slider">смотреть подробнее</a></p>
+              <p class="trip__link"><a class="trip__button" href="#montenegro">смотреть подробнее</a></p>
             </li>
             <li class="trip__unit trip__unit--croatia">
               <p class="trip__name">Хорватия</p>
-              <p class="trip__link"><a class="trip__button" href="#slider">смотреть подробнее</a></p>
+              <p class="trip__link"><a class="trip__button" href="#croatia">смотреть подробнее</a></p>
             </li>
           </ul>
         </header>
         <div class="trip__slider slider" id="slider">
           <ul class="slider__list">
-            <li class="slider__item">
+            <li class="slider__item" id="greece">
               <a class="slider__link slider__link--greece slider__link--active" href="#greece">Греция</a>
             </li>
-            <li class="slider__item">
+            <li class="slider__item" id="albania">
               <a class="slider__link slider__link--albania" href="#albania">Албания</a>
             </li>
-            <li class="slider__item">
+            <li class="slider__item" id="macedonia">
               <a class="slider__link slider__link--macedonia" href="#macedonia">Македония</a>
             </li>
-            <li class="slider__item">
+            <li class="slider__item" id="montenegro">
               <a class="slider__link slider__link--montenegro" href="#montenegro">Черногория</a>
             </li>
-            <li class="slider__item">
+            <li class="slider__item" id="croatia">
               <a class="slider__link slider__link--croatia" href="#croatia">Хорватия</a>
             </li>
           </ul>
@@ -143,7 +142,7 @@
           </li>
           <li class="trip__item trip__item--albania">
             <div class="trip__description description">
-              <h3 class="description__country-name">Албания</h3>
+              <h3 class="description__country-name description__country-name--albania">Албания</h3>
               <p class="description__text description__text--albania">В Албании мы посетим Курорт Ксамиль. Этот курорт
                 поразит вас чистейшей водой и
                 удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда
@@ -165,7 +164,7 @@
           </li>
           <li class="trip__item trip__item--macedonia">
             <div class="trip__description description">
-              <h3 class="description__country-name">Македония</h3>
+              <h3 class="description__country-name description__country-name--macedonia">Македония</h3>
               <p class="description__text description__text--macedonia">В Македонии нашей целью будет посетить
                 Палаошник, который расположился в удивительно
                 красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы
@@ -176,7 +175,7 @@
             <div class="trip__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--macedonia">
                 <div class="feedback__unit feedback__unit--macedonia">
-                  <h4 class="feedback__title">Отзывы</h4>
+                  <h4 class="feedback__title feedback__title--macedonia">Отзывы</h4>
                   <p class="feedback__text">Я бы сказал необычное старое здание. В архитектуре я
                     не разбираюсь, но подъем в гору
                     был очень веселым так как люди оказались легкими и заводными. Красота природы
@@ -188,7 +187,7 @@
           </li>
           <li class="trip__item trip__item--montenegro">
             <div class="trip__description description">
-              <h3 class="description__country-name">Черногория</h3>
+              <h3 class="description__country-name description__country-name--montenegro">Черногория</h3>
               <p class="description__text description__text--montenegro">Черногория удивит нас самым большим в Европе
                 каньоном реки Тара, который в некоторых
                 местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом
@@ -198,7 +197,7 @@
             <div class="trip__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--montenegro">
                 <div class="feedback__unit feedback__unit--montenegro">
-                  <h4 class="feedback__title">Отзывы</h4>
+                  <h4 class="feedback__title feedback__title--montenegro">Отзывы</h4>
                   <p class="feedback__text">Неописуемой красоты каньон! Ничего прекраснее в
                     жизни
                     не видела, разве что в фильмах
@@ -210,7 +209,7 @@
           </li>
           <li class="trip__item trip__item--croatia">
             <div class="trip__description description">
-              <h3 class="description__country-name">Хорватия</h3>
+              <h3 class="description__country-name description__country-name--croatia">Хорватия</h3>
               <p class="description__text description__text--croatia">В Хорватии мы посетим необычайную пещеру названную
                 Бередине. Ее подземный мир увлечет
                 вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными
@@ -221,7 +220,7 @@
             <div class="trip__feedback feedback">
               <div class="feedback__wrapper feedback__wrapper--croatia">
                 <div class="feedback__unit feedback__unit--croatia">
-                  <h4 class="feedback__title">Отзывы</h4>
+                  <h4 class="feedback__title feedback__title--croatia">Отзывы</h4>
                   <p class="feedback__text">Мы поехали всей семьей, я, моя жена и родители. Пещера
                     просто незабываема! А то, что
                     все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось,
@@ -253,9 +252,11 @@
               <p class="promotion__text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
               <ul class="promotion__bundle">
                 <li class="promotion__option promotion__option--complex">Разработанный маршрут с гидом группы</li>
-                <li class="promotion__option">Перелет, трансфер и проживание в отелях</li>
-                <li class="promotion__option">Завтраки, ужины в отелях и ланчи на природе</li>
-                <li class="promotion__option">Экскурсии по удивительно красивым местам Европы</li>
+                <li class="promotion__option promotion__option--complex">Перелет, трансфер и проживание в отелях</li>
+                <li class="promotion__option promotion__option--complex">Завтраки, ужины в отелях и ланчи на природе
+                </li>
+                <li class="promotion__option promotion__option--complex">Экскурсии по удивительно красивым местам Европы
+                </li>
               </ul>
               <a class="promotion__button promotion__button--complex button" href="#">купить тур сейчас</a>
             </li>
@@ -268,7 +269,8 @@
                 <li class="promotion__option promotion__option--economy">Перелет и трансфер</li>
                 <li class="promotion__option promotion__option--economy">Проживание в хостелах при отелях</li>
                 <li class="promotion__option promotion__option--economy">Только завтраки в отелях</li>
-                <li class="promotion__option promotion__option--economy">Экскурсии по удивительно красивым местам Европы</li>
+                <li class="promotion__option promotion__option--economy">Экскурсии по удивительно красивым местам Европы
+                </li>
               </ul>
               <a class="promotion__button promotion__button--economy button" href="#">купить тур сейчас</a>
             </li>
@@ -396,36 +398,40 @@
   <!--POPUPS-->
   <section class="popup">
     <div class="popup__wrapper">
-      <h4 class="popup__title">Купить тур</h4>
-      <form class="popup__form application" method="get">
-        <fieldset class="application__fieldset">
-          <legend class="visually-hidden">Ваша контактная информация:</legend>
-          <ul class="application__list">
-            <li class="application__item application__item--telephone">
-              <label class="visually-hidden" for="telephone-application-field">
-                Контактный телефон</label>
-              <input class="application__field application__field--telephone" type="tel" name="telephone"
-                id="telephone-application-field" pattern="[0-9]{10}" placeholder="+7 Введите 10 цифр номера" autofocus>
-            </li>
-            <li class="application__item application__item--email">
-              <label class="visually-hidden" for="email-application-field">Электронная почта</label>
-              <input class="application__field application__field--email" type="email" name="email"
-                id="email-application-field" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="E-mail">
-            </li>
-          </ul>
-        </fieldset>
-      </form>
-      <button class="popup__button button" href="#">отправить</button>
-      <button class="popup__close">Закрыть окно</button>
+      <div class="popup__unit">
+        <h4 class="popup__title">Купить тур</h4>
+        <form class="popup__form application" method="get">
+          <fieldset class="application__fieldset">
+            <legend class="visually-hidden">Ваша контактная информация:</legend>
+            <ul class="application__list">
+              <li class="application__item application__item--telephone">
+                <label class="visually-hidden" for="telephone-application-field">
+                  Контактный телефон</label>
+                <input class="application__field application__field--telephone" type="tel" name="telephone"
+                  id="telephone-application-field" pattern="[0-9]{10}" placeholder="+7 Введите 10 цифр номера"
+                  autofocus>
+              </li>
+              <li class="application__item application__item--email">
+                <label class="visually-hidden" for="email-application-field">Электронная почта</label>
+                <input class="application__field application__field--email" type="email" name="email"
+                  id="email-application-field" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="E-mail">
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <button class="popup__button button" href="#">отправить</button>
+        <button class="popup__close"><span class="visually-hidden">Закрыть окно</span></button>
+      </div>
     </div>
   </section>
   <section class="modal">
     <div class="modal__wrapper">
       <p class="modal__text">Форма успешно отправлена, спасибо! :)</p>
-      <button class="modal__close">Закрыть окно</button>
+      <button class="modal__close"><span class="visually-hidden">Закрыть окно</span></button>
     </div>
   </section>
   <!--</div>-->
+  <!--<script src="./js/navigation.min.js"></script>-->
   <script src="./js/popup.min.js"></script>
   <script src="./js/slider.min.js"></script>
 </body>

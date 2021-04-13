@@ -7,7 +7,7 @@
 
   border: 1px solid $greyopacity;
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
 
   @media (max-width: $tablet-width-only) {
     width: 288px;
@@ -184,6 +184,11 @@
 .promotion__option--complex {
   //PixelPerfect
   margin-bottom: 10px;
+
+
+  &:last-child {
+    margin-bottom: 12px;
+  }
 }
 
 .promotion__button {
@@ -248,5 +253,7 @@
 .promotion__item:hover .promotion__option {
   &::before {
     background-image: url("../img/hover.svg");
+    width: 22px;
+    height: 22px;
   }
 }
