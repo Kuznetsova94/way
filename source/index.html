@@ -13,9 +13,7 @@
 </head>
 
 <body class="page__body">
-  <!--<div class="page__wrapper">-->
   <header class="page-header">
-    <!--Контейнер для центровки ЧЕРДАК -->
     <div class="page-header__wrapper">
       <a class="page-header__logo">
         <picture>
@@ -27,23 +25,21 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <!--<div class="main-nav__wrapper">-->
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#trip">
-              О путешествии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#prices">
-              Цены
-            </a>
-          </li>
-        </ul>
-        <button class="main-nav__close main-nav__close--active" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-        <!--</div>-->
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#trip">
+                О путешествии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#prices">
+                Цены
+              </a>
+            </li>
+          </ul>
+          <button class="main-nav__close main-nav__close--active" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
       </nav>
       <div class="page-header__telephone">
         <a class="page-header__number" href="tel:+749978468446"> +7 (499) -784-684-46</a>
@@ -310,50 +306,6 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__countries countries">
         <p class="countries__title">Следующие путешествия</p>
-        <!--<table class="countries__list">
-          <tr class="countries__row">
-            <td class="countries__item">Марсель</td>
-            <td class="countries__item">Сардиния</td>
-            <td class="countries__item">Корс</td>
-          </tr>
-          <tr class="countries__row">
-            <td class="countries__item">Ним</td>
-            <td class="countries__item">Палермо</td>
-            <td class="countries__item">Ницца</td>
-          </tr>
-          <tr class="countries__row">
-            <td class="countries__item">Монпелье</td>
-            <td class="countries__item">Катания</td>
-            <td class="countries__item">Монако</td>
-          </tr>
-          <tr class="countries__row">
-            <td class="countries__item">Барселона</td>
-            <td class="countries__item">Неаполь</td>
-            <td class="countries__item">Динь-ле-Бен</td>
-          </tr>
-          <tr class="countries__row">
-            <td class="countries__item">Пальма</td>
-            <td class="countries__item">Рим</td>
-            <td class="countries__item">Гренобль</td>
-          </tr>
-        </table>-->
-        <!--<ul class="countries__list">
-          <li class="countries__item countries__item--first">Марсель</li>
-          <li class="countries__item countries__item--second">Сардиния</li>
-          <li class="countries__item countries__item--third">Корс</li>
-          <li class="countries__item countries__item--first">Ним</li>
-          <li class="countries__item countries__item--second">Палермо</li>
-          <li class="countries__item countries__item--third">Ницца</li>
-          <li class="countries__item countries__item--first">Монпелье</li>
-          <li class="countries__item countries__item--second">Катания</li>
-          <li class="countries__item countries__item--third">Монако</li>
-          <li class="countries__item countries__item--first">Барселона</li>
-          <li class="countries__item countries__item--second">Неаполь</li>
-          <li class="countries__item countries__item--third">Динь-ле-Бен</li>
-          <li class="countries__item countries__item--first">Пальма</li>
-          <li class="countries__item countries__item--second">Рим</li>
-          <li class="countries__item countries__item--third">Гренобль</li>
-        </ul>-->
         <ul class="countries__list">
           <li class="countries__item countries__item--one">Марсель</li>
           <li class="countries__item countries__item--two">Сардиния</li>
@@ -409,7 +361,7 @@
                   Контактный телефон</label>
                 <input class="application__field application__field--telephone" type="tel" name="telephone"
                   id="telephone-application-field" pattern="[0-9]{10}" placeholder="+7 Введите 10 цифр номера"
-                  autofocus>
+                  required>
               </li>
               <li class="application__item application__item--email">
                 <label class="visually-hidden" for="email-application-field">Электронная почта</label>
@@ -419,20 +371,19 @@
             </ul>
           </fieldset>
         </form>
-        <button class="popup__button button" href="#">отправить</button>
+        <button class="popup__button button">отправить</button>
         <button class="popup__close"><span class="visually-hidden">Закрыть окно</span></button>
       </div>
     </div>
   </section>
   <section class="modal">
     <div class="modal__wrapper">
+      <h4 class="visually-hidden">Успешная отправка формы</h4>
       <p class="modal__text">Форма успешно отправлена, спасибо! :)</p>
       <button class="modal__close"><span class="visually-hidden">Закрыть окно</span></button>
     </div>
   </section>
-  <!--</div>-->
-  <!--<script src="./js/navigation.min.js"></script>-->
-  <script src="./js/popup.min.js"></script>
+  <script src="../js/script.min.js"></script>
   <script src="./js/slider.min.js"></script>
 </body>
 

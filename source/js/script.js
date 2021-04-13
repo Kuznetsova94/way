@@ -1,3 +1,21 @@
+// Навигация
+const openNavButton = document.querySelector(".main-nav__toggle");
+const closeNavButton = document.querySelector(".main-nav__close");
+const mainNav = document.querySelector(".site-list");
+
+openNavButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mainNav.classList.remove("site-list--close");
+  closeNavButton.classList.add("main-nav__close--active");
+  openNavButton.classList.add("main-nav__toggle--close");
+});
+closeNavButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mainNav.classList.add("site-list--close");
+  closeNavButton.classList.remove("main-nav__close--active");
+  openNavButton.classList.remove("main-nav__toggle--close");
+});
+
 //Модальное окно
 const popupField = document.querySelector(".popup");
 // Кнопки открыть и закрыть
