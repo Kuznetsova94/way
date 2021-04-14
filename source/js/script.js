@@ -1,17 +1,17 @@
 // Навигация
 const openNavButton = document.querySelector(".main-nav__toggle");
 const closeNavButton = document.querySelector(".main-nav__close");
-const mainNav = document.querySelector(".site-list");
+const mainNav = document.querySelector(".main-nav__list");
 
 openNavButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mainNav.classList.remove("site-list--close");
+  mainNav.classList.remove("main-nav__list--close");
   closeNavButton.classList.add("main-nav__close--active");
   openNavButton.classList.add("main-nav__toggle--close");
 });
 closeNavButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mainNav.classList.add("site-list--close");
+  mainNav.classList.add("main-nav__list--close");
   closeNavButton.classList.remove("main-nav__close--active");
   openNavButton.classList.remove("main-nav__toggle--close");
 });

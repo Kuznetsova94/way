@@ -19,22 +19,6 @@
 }
 
 @media (max-width: $tablet-width-only) {
-  .site-list {
-    display: flex;
-    flex-direction: column;
-
-    width: 768px;
-    height: 568px;
-
-    position: absolute;
-    top: 15px;
-    right: 75px;
-  }
-
-  .site-list--close {
-    display: none;
-  }
-
   .site-list__item {
     position: relative;
     width: 768px;
@@ -76,21 +60,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .site-list {
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    height: 568px;
-
-    position: absolute;
-    top: 13px;
-    left: 190px;
-  }
-
-  .site-list--close {
-    display: none;
-  }
-
   .site-list__item {
     position: relative;
     width: 320px;

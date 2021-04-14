@@ -21,6 +21,10 @@
     line-height: 17px;
     color: $darkblack;
   }
+
+  &:invalid {
+    border: 2px solid $carrot;
+  }
 }
 
 .application__field--telephone {

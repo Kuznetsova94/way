@@ -505,6 +505,18 @@
     top: -118px;
     left: -313px;
   }
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    top: 80px;
+    left: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    top: 55px;
+    left: 1px;
+  }
 }
 
 //Ретинизация на декстопной версии
@@ -542,6 +554,18 @@
     //PixelPerfect
     top: -147px;
     left: -320px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    top: 100px;
+    left: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    top: 110px;
+    left: 1px;
   }
 }
 
@@ -582,6 +606,18 @@
     top: -115px;
     left: -301px;
   }
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    top: 80px;
+    left: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    top: 45px;
+    left: 1px;
+  }
 }
 
 //Ретинизация на декстопной версии
@@ -620,6 +656,20 @@
     //PixelPerfect
     top: -158px;
     left: -325px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    width: 370px;
+    //PixelPerfect
+    top: 150px;
+    left: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    width: 268px;
+    top: 140px;
+    left: 1px;
   }
 }
 
@@ -660,6 +710,18 @@
     top: -114px;
     left: -325px;
   }
+
+  @media (max-width: $tablet-width-only) {
+    //PixelPerfect
+    top: 80px;
+    left: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    //PixelPerfect
+    top: 40px;
+    left: 1px;
+  }
 }
 
 //Ретинизация на декстопной версии
@@ -696,77 +758,5 @@
     &::before {
       background-image: none;
     }
-  }
-}
-
-.feedback__unit--greece {
-  @media (max-width: $tablet-width-only) {
-    //PixelPerfect
-    top: 80px;
-    left: 0px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    //PixelPerfect
-    top: 55px;
-    left: 1px;
-  }
-}
-
-.feedback__unit--albania {
-  @media (max-width: $tablet-width-only) {
-    //PixelPerfect
-    top: 100px;
-    left: 0;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    //PixelPerfect
-    top: 110px;
-    left: 1px;
-  }
-}
-
-.feedback__unit--macedonia {
-  @media (max-width: $tablet-width-only) {
-    //PixelPerfect
-    top: 80px;
-    left: 0px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    //PixelPerfect
-    top: 45px;
-    left: 1px;
-  }
-}
-
-.feedback__unit--montenegro {
-  @media (max-width: $tablet-width-only) {
-    width: 370px;
-    //PixelPerfect
-    top: 150px;
-    left: 0px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    //PixelPerfect
-    width: 268px;
-    top: 140px;
-    left: 1px;
-  }
-}
-
-.feedback__unit--croatia {
-  @media (max-width: $tablet-width-only) {
-    //PixelPerfect
-    top: 80px;
-    left: 0px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    //PixelPerfect
-    top: 40px;
-    left: 1px;
   }
 }

@@ -99,7 +99,7 @@
 .description__country-name--albania {
   @media (max-width: $tablet-width-only) {
     //PixelPerfect
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 
@@ -115,17 +115,17 @@
   }
 
   @media (max-width: $mobile-width-only) {
-      //PixelPerfect
-      margin-top: -1px;
-      margin-left: 0;
-      margin-bottom: 35px;
+    //PixelPerfect
+    margin-top: -1px;
+    margin-left: 0;
+    margin-bottom: 35px;
   }
 }
 
 .description__country-name--macedonia {
   @media (max-width: $tablet-width-only) {
     //PixelPerfect
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 
@@ -146,13 +146,13 @@
     margin-top: -1px;
     margin-left: 0;
     margin-bottom: 35px;
-}
+  }
 }
 
 .description__country-name--montenegro {
   @media (max-width: $tablet-width-only) {
     //PixelPerfect
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 
@@ -173,13 +173,13 @@
     margin-top: -1px;
     margin-left: 0;
     margin-bottom: 35px;
-}
+  }
 }
 
 .description__country-name--croatia {
   @media (max-width: $tablet-width-only) {
     //PixelPerfect
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 
@@ -200,7 +200,7 @@
     margin-top: -1px;
     margin-left: 0;
     margin-bottom: 35px;
-}
+  }
 }
 
 .description__button {

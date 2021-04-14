@@ -128,16 +128,14 @@
   }
 }
 
-// Открытие модального окна
 .popup__show {
   display: block;
   animation: bounce 0.5s;
 }
 
 @keyframes bounce {
-
   0% {
-    top: 0px;
+    top: 0;
   }
 
   25% {
@@ -153,6 +151,6 @@
   }
 
   100% {
-    top: 0px;
+    top: 0;
   }
 }

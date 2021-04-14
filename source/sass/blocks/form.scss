@@ -6,7 +6,7 @@
   @include reset-list;
 
   display: flex;
-  //Pixel Perfect
+  //PixelPerfect
   margin-left: 34px;
 
   @media (max-width: $mobile-width-only) {
@@ -23,7 +23,6 @@
   border: 1px solid $greyopacity;
 
   &::placeholder {
-    //padding-top: 20px;
     padding-left: 25px;
 
     font-family: "Montserrat", sans-serif;

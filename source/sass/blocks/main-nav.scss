@@ -10,17 +10,28 @@
   margin-left: 18px;
 }
 
-// Меню-бургер
 .main-nav__toggle {
   display: none;
 }
 
-// Меню-закрытие
 .main-nav__close {
   display: none;
 }
 
 @media (max-width: $tablet-width-only) {
+  .main-nav__list {
+    display: inline-block;
+    height: 568px;
+
+    position: relative;
+    top: 0;
+    left: -670px;
+  }
+
+  .main-nav__list--close {
+    display: none;
+  }
+
   .main-nav__toggle {
     position: relative;
     display: block;
@@ -63,11 +74,15 @@
     right: 105px;
     width: 22px;
     height: 22px;
-    //z-index: 100;
   }
 }
 
 @media (max-width: $mobile-width-only) {
+  .main-nav__list {
+    top: 0;
+    left: -245px;
+  }
+
   .main-nav__toggle {
     width: 50px;
 
@@ -80,6 +95,6 @@
 @media (max-width: $mobile-width-only) {
   .main-nav__close--active {
     top: 65px;
-    right: 235px;
+    right: 200px;
   }
 }

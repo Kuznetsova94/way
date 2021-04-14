@@ -29,10 +29,6 @@
   grid-template-rows: repeat(5, 1fr);
   row-gap: 11px;
 
-  @media (max-width: $tablet-width-only) {
-    //margin-left: 20px;
-  }
-
   @media (max-width: $mobile-width-only) {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(10, 1fr);

@@ -8,7 +8,6 @@
   margin-bottom: 138px;
 
   @media (max-width: $tablet-width-only) {
-    //flex-direction: column;
     max-width: 768px;
     //PixelPerfect
     margin-top: 25px;
@@ -18,7 +17,7 @@
   @media (max-width: $mobile-width-only) {
     max-width: 320px;
     //PixelPerfect
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 50px;
   }
 }

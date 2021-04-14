@@ -157,7 +157,7 @@
 .trip__unit:hover .trip__link {
   display: flex;
 
- @media (max-width: $tablet-width-only) {
+  @media (max-width: $tablet-width-only) {
     width: 288px;
     height: 425px;
   }
@@ -213,7 +213,6 @@
   }
 }
 
-// Картинки, соотв. странам
 .trip__unit--greece {
   background-image: url("../img/desktop-greece.jpg");
 
@@ -439,7 +438,6 @@
   }
 }
 
-// ===============================  Вторая часть раздела; СЛАЙДЕР ============================ //
 .trip__list {
   @include reset-list;
 }
