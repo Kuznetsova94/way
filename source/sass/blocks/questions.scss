@@ -38,10 +38,10 @@
 @media (max-width: $tablet-width-only) {
   .questions__wrapper {
     width: 768px;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     // PixelPerfect
     padding-top: 47px;
-    margin-left: 70px;
+    margin-left: 88px;
 
     &::before {
       background-image: url("../img/tablet-sunset.jpg");
